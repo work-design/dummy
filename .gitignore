@@ -1,3 +1,5 @@
+db/schema.rb
+
 log/*
 !log/.keep
 
