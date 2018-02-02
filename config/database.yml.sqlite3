@@ -2,10 +2,11 @@ default: &default
   adapter: sqlite3
   pool: 5
   timeout: 5000
-  database: file:dummy_db?mode=memory&cache=shared
 
 development:
   <<: *default
+  database: db/development.sqlite3
 
 test:
   <<: *default
+  database: db/test.sqlite3

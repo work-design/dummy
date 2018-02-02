@@ -3,5 +3,6 @@ db/schema.rb
 log/*
 !log/.keep
 
+config/database.yml
 tmp/*
 !/tmp/.keep
