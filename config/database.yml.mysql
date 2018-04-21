@@ -11,4 +11,4 @@ development:
 
 test:
   <<: *default
-  database:
+  database: dummy_test
