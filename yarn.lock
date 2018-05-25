@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+jquery@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+
 "yigexiangfa_ui@https://github.com/yigexiangfa/yigexiangfa.github.io.git":
   version "1.0.0"
   resolved "https://github.com/yigexiangfa/yigexiangfa.github.io.git#9cae61fdca18b86b7107857da13fdcd14b81d6e4"
