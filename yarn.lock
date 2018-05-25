@@ -8,4 +8,4 @@ jquery@^3.3.1:
 
 "yigexiangfa_ui@https://github.com/yigexiangfa/yigexiangfa.github.io.git":
   version "1.0.0"
-  resolved "https://github.com/yigexiangfa/yigexiangfa.github.io.git#9cae61fdca18b86b7107857da13fdcd14b81d6e4"
+  resolved "https://github.com/yigexiangfa/yigexiangfa.github.io.git#92d7a1a8eb095095b5226abca7fd07c05c0489dc"
