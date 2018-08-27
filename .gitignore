@@ -4,6 +4,5 @@ db/*.sqlite3
 log/*
 !log/.keep
 
-config/database.yml
 tmp/*
 !/tmp/.keep
