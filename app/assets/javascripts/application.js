@@ -1,2 +1,2 @@
-//= require yigexiangfa_ui/dist/javascripts/semantic
+//= require yougexiangfa_ui/dist/javascripts/semantic
 //= require_tree .
