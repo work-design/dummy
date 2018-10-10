@@ -45,6 +45,8 @@ Rails.application.configure do
   # Suppress logger output for asset requests.
   config.assets.quiet = true
 
+  config.active_storage.service = :qiniu
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
@@ -52,3 +54,5 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   # config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 end
+
+ENV['EDITOR'] = 'code --wait'
