@@ -1,4 +1,4 @@
-class My::BaseController < ApplicationController
+class MyController < ApplicationController
   include RailsAuthController
   before_action :require_login_from_session
 
