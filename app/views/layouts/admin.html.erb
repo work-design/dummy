@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="<%= I18n.locale %>">
+  <head>
+    <title>管理后台</title>
+    <%= stylesheet_link_tag 'admin/application' %>
+    <%= css_load media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'admin/application' %>
+    <%= js_ready 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
+    <%= action_cable_meta_tag %>
+    <%= csp_meta_tag %>
+  </head>
+  <body>
+    <%= render 'shared/alert' %>
+    <%= render 'nav_bar' %>
+
+    <main class="ui invisible side">
+      <div class="sidebar">
+        <%= render 'nav' %>
+      </div>
+      <div class="content">
+        <%= yield %>
+      </div>
+    </main>
+    
+    <%= js_load %>
+    <%= javascript_include_tag 'footer' %>
+    <div id="modal"></div>
+  </body>
+</html>
+
