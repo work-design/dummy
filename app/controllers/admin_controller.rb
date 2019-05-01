@@ -1,6 +1,6 @@
 class AdminController < ApplicationController
-  include RailsAuthController
-  include RailsRoleController
+  include RailsAuth::Controller
+  include RailsRole::Controller
 
   default_form_builder 'AdminBuilder' do |config|
 
