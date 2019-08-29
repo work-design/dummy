@@ -9,6 +9,7 @@ tmp/*
 !/tmp/.keep
 
 # Ignore master key for decrypting credentials and more.
-/config/master.key
+config/master.key
+config/webpacker.yml
 
 Gemfile.lock
