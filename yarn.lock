@@ -5770,7 +5770,7 @@ querystringify@^2.1.1:
 
 "rails_com@https://github.com/work-design/rails_com.git":
   version "0.0.1"
-  resolved "https://github.com/work-design/rails_com.git#8f749726768c540cc4e37c7d5d55f2682c2aa4e8"
+  resolved "https://github.com/work-design/rails_com.git#00855b3bebec22e5d40cdd7d5888bf76a7f3407c"
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
