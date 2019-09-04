@@ -5768,9 +5768,10 @@ querystringify@^2.1.1:
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
   integrity sha512-w7fLxIRCRT7U8Qu53jQnJyPkYZIaR4n5151KMfcJlO/A9397Wxb1amJvROTK6TOnp7PfoAmg/qXiNHI+08jRfA==
 
-"rails_com@https://github.com/work-design/rails_com.git":
+rails_com@^0.0.1:
   version "0.0.1"
-  resolved "https://github.com/work-design/rails_com.git#00855b3bebec22e5d40cdd7d5888bf76a7f3407c"
+  resolved "https://registry.yarnpkg.com/rails_com/-/rails_com-0.0.1.tgz#a7c6055b65576f4a69073ae58a46dff11b7df021"
+  integrity sha512-O6Oa3MMn6DrEkeI/6thQRzE3AM86Hzku8E1RPVMt3pwm19RoX48Yu1LLR//4wqsxn0MRO5432eZmHOgqNSM2NQ==
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
