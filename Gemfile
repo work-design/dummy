@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'rails', '6.0.0.rc1'
+gem 'rails', '6.0.0'
 gem 'bootsnap', require: false
 
 gem 'puma'
@@ -11,17 +11,13 @@ gem 'redis'
 gem 'qiniu_rails', github: 'qinmingyuan/qiniu_rails', branch: 'master'
 gem 'sassc-rails'
 gem 'turbolinks'
-gem 'uglifier'
+gem 'webpacker', require: File.exist?('config/webpacker.yml')
 
 gem 'jbuilder'
 gem 'kaminari'
 gem 'acts_as_list'
 gem 'closure_tree', github: 'qinmingyuan/closure_tree', branch: 'master'
 gem 'bcrypt'
-gem 'default_form', github: 'qinmingyuan/default_form', branch: 'master'
-gem 'default_where', github: 'qinmingyuan/default_where', branch: 'master'
-gem 'rails_com', github: 'work-design/rails_com', branch: 'master'
-
 
 gem 'sprockets', '4.0.0.beta8'
 gem 'zeitwerk'
