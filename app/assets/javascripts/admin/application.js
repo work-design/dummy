@@ -1,15 +1,6 @@
-//= require rails_com/application
-
-//= require jquery
-//= require work-design/dist/javascripts/semantic
-//= require moment/src/moment
-//= require cable
-
-//= require rails_com/sidebar
-//= require default_form/ready
-//= require default_form/valid
-//= require_self
-
-
-
-
+import 'rails_com/application'
+import 'jquery'
+import 'dappore-ui/dist/semantic'
+import 'moment'
+import 'default_form/application'
+import 'rails_com/stimulus'
