@@ -1,2 +1,2 @@
-import 'work-ui/dist/javascripts/semantic'
+import 'work-ui/dist/semantic'
 import 'moment'

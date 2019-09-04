@@ -1,6 +1,6 @@
 import 'rails_com/application'
 import 'jquery'
-import 'dappore-ui/dist/semantic'
+import 'work-ui/dist/semantic'
 import 'moment'
 import 'default_form/application'
 import 'rails_com/stimulus'
