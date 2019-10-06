@@ -15,6 +15,6 @@
     "work-ui": "https://github.com/work-design/work-ui.git"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.8.0"
+    "webpack-dev-server": "^3.8.2"
   }
 }
