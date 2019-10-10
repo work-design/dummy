@@ -8,7 +8,7 @@ gem 'puma'
 gem 'sidekiq'
 gem 'sqlite3'
 gem 'redis'
-gem 'qiniu_rails', github: 'qinmingyuan/qiniu_rails', branch: 'master'
+gem 'qiniu_rails', github: 'qinmingyuan/qiniu_rails'
 gem 'sassc-rails'
 gem 'turbolinks'
 gem 'webpacker', require: File.exist?('config/webpacker.yml')
@@ -16,7 +16,7 @@ gem 'webpacker', require: File.exist?('config/webpacker.yml')
 gem 'jbuilder'
 gem 'kaminari'
 gem 'acts_as_list'
-gem 'closure_tree', github: 'qinmingyuan/closure_tree', branch: 'master'
+gem 'closure_tree', github: 'qinmingyuan/closure_tree'
 gem 'bcrypt'
 
 gem 'sprockets', '4.0.0.beta8'
@@ -29,7 +29,8 @@ gem 'server_timing'
 gem 'wechat'
 
 # oauth
-gem 'omniauth-wechat-oauth2', github: 'qinmingyuan/omniauth-wechat-oauth2', branch: 'master'
+gem 'omniauth-wechat-oauth2', github: 'qinmingyuan/omniauth-wechat-oauth2'
+gem 'rails_com', github: 'work-design/rails_com'
 
 group :development, :test, :staging do
   gem 'awesome_print'
