@@ -1,5 +1,4 @@
-# This migration comes from rails_com_engine (originally 20181012025833)
-class RailsComInit < ActiveRecord::Migration[5.2]
+class RailsComMigrate < ActiveRecord::Migration[6.0]
   def change
 
     create_table :active_storage_blob_defaults do |t|
@@ -7,7 +6,7 @@ class RailsComInit < ActiveRecord::Migration[5.2]
       t.string :name
       t.boolean :private
       t.timestamps
-    end
+    end unless table_exists?(:active_storage_blob_defaults)
 
     change_column_null :active_storage_blobs, :checksum, true
 
@@ -17,13 +16,13 @@ class RailsComInit < ActiveRecord::Migration[5.2]
       t.string :version
       t.string :platform
       t.timestamps
-    end
+    end unless table_exists?(:infos)
 
     create_table :cache_lists do |t|
       t.string :path
       t.string :key
       t.timestamps
-    end
+    end unless table_exists?(:cache_lists)
 
   end
 end
