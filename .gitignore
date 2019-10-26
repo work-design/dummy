@@ -9,17 +9,15 @@ log/*
 tmp/*
 !/tmp/.keep
 
-# Ignore master key for decrypting credentials and more.
 config/master.key
 config/webpacker.yml
 
 Gemfile.lock
 
-/public/packs
-/public/packs-test
-/node_modules
-/yarn-error.log
+public/assets
+public/packs
+public/packs-test
+node_modules
+yarn-error.log
 yarn-debug.log*
 .yarn-integrity
-
-
