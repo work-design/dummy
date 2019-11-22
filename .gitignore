@@ -12,8 +12,6 @@ tmp/*
 config/master.key
 config/webpacker.yml
 
-Gemfile.lock
-
 public/assets
 public/packs
 public/packs-test
