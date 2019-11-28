@@ -1,5 +1,7 @@
 class MyController < ApplicationController
-  include RailsAuth::Controller
-  before_action :require_login
+  if defined? RailsAuth
+    include RailsAuth::Application
+    before_action :require_login
+  end
 
 end
