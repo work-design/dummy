@@ -21,12 +21,10 @@ gem 'bcrypt'
 
 gem 'sprockets', '4.0.0.beta8'
 gem 'zeitwerk'
+
 # apm
 gem 'scout_apm'
 gem 'server_timing'
-
-# parts
-gem 'wechat'
 
 # oauth
 gem 'omniauth-wechat-oauth2', github: 'qinmingyuan/omniauth-wechat-oauth2'

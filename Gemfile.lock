@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_com.git
-  revision: 915dbb0672d71f2f77772be469fd9509b7e453c4
+  revision: 6d47e92f89cca4735792475fd9ddd6f374221a1a
   specs:
     rails_com (1.2.9)
       default_form (~> 1.5)
@@ -132,24 +132,13 @@ GEM
     faraday (0.17.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.11.2)
-    ffi-compiler (1.0.1)
-      ffi (>= 1.0.0)
-      rake
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     hashie (3.6.0)
     http-2-next (0.1.2)
-    http (4.2.0)
-      addressable (~> 2.3)
-      http-cookie (~> 1.0)
-      http-form_data (~> 2.0)
-      http-parser (~> 1.2.0)
     http-accept (1.7.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    http-form_data (2.1.1)
-    http-parser (1.2.1)
-      ffi-compiler (>= 1.0, < 2.0)
     httpx (0.6.1)
       http-2-next (>= 0.1.2)
       timers
@@ -329,11 +318,6 @@ GEM
     websocket-driver (0.7.1)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.4)
-    wechat (0.11.7)
-      activesupport (>= 3.2, < 7)
-      http (>= 1.0.4, < 5)
-      nokogiri (>= 1.6.0)
-      thor
     with_advisory_lock (4.6.0)
       activerecord (>= 4.2)
     xpath (3.2.0)
@@ -376,7 +360,6 @@ DEPENDENCIES
   web-console
   webdrivers
   webpacker
-  wechat
   zeitwerk
 
 BUNDLED WITH
