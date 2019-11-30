@@ -21,6 +21,7 @@ gem 'bcrypt'
 
 gem 'sprockets', '4.0.0.beta8'
 gem 'zeitwerk'
+gem 'image_processing'
 
 # apm
 gem 'scout_apm'

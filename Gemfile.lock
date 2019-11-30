@@ -23,7 +23,7 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_com.git
-  revision: 6d47e92f89cca4735792475fd9ddd6f374221a1a
+  revision: 4196b9e63652836dec76ab736a8ca4856d7f34d5
   specs:
     rails_com (1.2.9)
       default_form (~> 1.5)
@@ -139,11 +139,14 @@ GEM
     http-accept (1.7.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    httpx (0.6.1)
+    httpx (0.6.2)
       http-2-next (>= 0.1.2)
       timers
     i18n (1.7.0)
       concurrent-ruby (~> 1.0)
+    image_processing (1.9.3)
+      mini_magick (>= 4.9.5, < 5)
+      ruby-vips (>= 2.0.13, < 3)
     jbuilder (2.9.1)
       activesupport (>= 4.2.0)
     jwt (2.2.1)
@@ -174,6 +177,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2019.1009)
     mimemagic (0.3.3)
+    mini_magick (4.9.5)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.13.0)
@@ -257,6 +261,8 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
+    ruby-vips (2.0.16)
+      ffi (~> 1.9)
     rubyzip (2.0.0)
     sassc (2.2.1)
       ffi (~> 1.9)
@@ -336,6 +342,7 @@ DEPENDENCIES
   capybara
   closure_tree!
   factory_bot_rails
+  image_processing
   jbuilder
   kaminari
   listen
