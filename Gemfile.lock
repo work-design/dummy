@@ -358,13 +358,11 @@ DEPENDENCIES
   sidekiq
   spring
   spring-watcher-listen
-  sprockets (= 4.0.0.beta8)
   sqlite3
   turbolinks
   web-console
   webdrivers
   webpacker
-  zeitwerk
 
 BUNDLED WITH
    1.17.2
