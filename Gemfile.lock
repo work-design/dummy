@@ -353,7 +353,6 @@ DEPENDENCIES
   web-console
   webdrivers
   webpacker
-  zeitwerk
 
 BUNDLED WITH
    1.17.2

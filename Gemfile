@@ -18,7 +18,6 @@ gem 'acts_as_list'
 gem 'closure_tree', github: 'qinmingyuan/closure_tree'
 gem 'bcrypt'
 
-gem 'zeitwerk'
 gem 'image_processing'
 
 # apm
