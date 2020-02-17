@@ -4,4 +4,5 @@ import 'default_form/application'
 
 import 'jquery'
 import 'moment'
-import 'work-ui/dist/semantic'
+
+import '@work-design/ui/public/packs/js/semantic'

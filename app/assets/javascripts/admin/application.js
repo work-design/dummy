@@ -1,6 +1,8 @@
 import 'rails_com/application'
-import 'jquery'
-import 'work-ui/dist/semantic'
-import 'moment'
-import 'default_form/application'
 import 'rails_com/stimulus'
+import 'default_form/application'
+
+import 'jquery'
+import 'moment'
+
+import '@work-design/ui/public/packs/js/semantic'
