@@ -6,6 +6,7 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "^4.0.7",
+    "work-design/ui": "https://github.com/work-design/ui.git",
     "bulma": "^0.8.0",
     "expose-loader": "https://github.com/qinmingyuan/expose-loader.git",
     "jquery": "^3.3.1",
@@ -14,9 +15,7 @@
     "sortablejs": "^1.10.1",
     "stimulus": "^1.1.0",
     "turbolinks": "^5.2.0",
-    "weui": "^2.0.1",
-    "weui.js": "^1.2.1",
-    "work-ui": "https://github.com/work-design/work-ui.git"
+    "weui.js": "^1.2.1"
   },
   "devDependencies": {
     "webpack-dev-server": "^3.9.0"
