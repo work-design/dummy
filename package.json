@@ -6,7 +6,6 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "^4.0.7",
-    "@work-design/ui": "https://github.com/work-design/ui.git",
     "bulma": "^0.8.0",
     "expose-loader": "https://github.com/qinmingyuan/expose-loader.git",
     "jquery": "^3.3.1",
