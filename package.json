@@ -11,7 +11,7 @@
     "expose-loader": "https://github.com/qinmingyuan/expose-loader.git",
     "moment": "^2.23.0",
     "qinmingyuan_turbolinks": "^5.3.0-beta.2",
-    "rails_com": "https://github.com/work-design/rails_com.git",
+    "rails_com": "^0.0.2",
     "sortablejs": "^1.10.1",
     "stimulus": "^1.1.0",
     "turbolinks": "^5.2.0",
