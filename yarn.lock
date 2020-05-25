@@ -1586,10 +1586,10 @@ builtin-status-codes@^3.0.0:
   resolved "https://registry.yarnpkg.com/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
 
-bulma@^0.8.1:
-  version "0.8.1"
-  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.8.1.tgz#a5feacb703b73a87fdeae4f0d12317d62fc1d301"
-  integrity sha512-Afi2zv4DKmNSYfmx55V+Mtnt8+WfR8Rs65kWArmzEuWP7vNr7dSAEDI+ORZlgOR1gueNZwpKaPdUi4ZiTNwgPA==
+bulma@^0.8.2:
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.8.2.tgz#5d928f16ed4a84549c2873f95c92c38c69c631a7"
+  integrity sha512-vMM/ijYSxX+Sm+nD7Lmc1UgWDy2JcL2nTKqwgEqXuOMU+IGALbXd5MLt/BcjBAPLIx36TtzhzBcSnOP974gcqA==
 
 bytes@3.0.0:
   version "3.0.0"
@@ -5998,6 +5998,11 @@ q@^1.1.2:
   resolved "https://registry.yarnpkg.com/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
   integrity sha1-fjL3W0E4EpHQRhHxvxQQmsAGUdc=
 
+qinmingyuan_turbolinks@^5.3.0-beta.2:
+  version "5.3.0-beta.2"
+  resolved "https://registry.yarnpkg.com/qinmingyuan_turbolinks/-/qinmingyuan_turbolinks-5.3.0-beta.2.tgz#2df906db410697f0b80b6eba662888c893829d75"
+  integrity sha512-6oQSkb3vbOem88C1hMxyuJ2cF4ontws4RGqnsUIzd/0QTfyXWuC5ita3o8ZjUKmQK/tzAAnigZlakKBMYXXSBQ==
+
 qs@6.7.0:
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
@@ -6031,10 +6036,9 @@ querystringify@^2.1.1:
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
   integrity sha512-w7fLxIRCRT7U8Qu53jQnJyPkYZIaR4n5151KMfcJlO/A9397Wxb1amJvROTK6TOnp7PfoAmg/qXiNHI+08jRfA==
 
-rails_com@^0.0.1:
+"rails_com@https://github.com/work-design/rails_com.git":
   version "0.0.1"
-  resolved "https://registry.yarnpkg.com/rails_com/-/rails_com-0.0.1.tgz#a7c6055b65576f4a69073ae58a46dff11b7df021"
-  integrity sha512-O6Oa3MMn6DrEkeI/6thQRzE3AM86Hzku8E1RPVMt3pwm19RoX48Yu1LLR//4wqsxn0MRO5432eZmHOgqNSM2NQ==
+  resolved "https://github.com/work-design/rails_com.git#c00c5e691d4507edc941fcf7fedde3de36dd03ad"
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
