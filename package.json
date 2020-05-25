@@ -9,7 +9,6 @@
     "@rails/webpacker": "^4.0.7",
     "bulma": "^0.8.1",
     "expose-loader": "https://github.com/qinmingyuan/expose-loader.git",
-    "jquery": "^3.3.1",
     "moment": "^2.23.0",
     "rails_com": "^0.0.1",
     "sortablejs": "^1.10.1",
