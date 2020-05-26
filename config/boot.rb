@@ -1,5 +1,9 @@
-# Set up gems listed in the Gemfile.
-ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../../../Gemfile', __dir__)
+engine_path = File.expand_path('../../../Gemfile', __dir__)
+if File.exist? engine_path
+  ENV['BUNDLE_GEMFILE'] ||= engine_path
+  $:.unshift File.expand_path('../../../lib', __dir__)
+else
+  ENV['BUNDLE_GEMFILE'] ||= File.expand_path('../Gemfile', __dir__)
+end
 
-require 'bundler/setup' if File.exist?(ENV['BUNDLE_GEMFILE'])
-$LOAD_PATH.unshift File.expand_path('../../../lib', __dir__)
+require 'bundler/setup'

@@ -1,5 +1,4 @@
 require_relative 'boot'
-
 require 'rails_com/all'
 
 Bundler.require(*Rails.groups)
