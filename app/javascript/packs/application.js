@@ -1,9 +1,8 @@
 require.context('../images', true)
-import 'bulma_ext'
-import 'font_ext'
-import 'tooltip'
 
-import 'rails_com/application'
-import 'stimulus_com/all'
-import 'default_form/application'
+import 'style_com/application'
+
+import 'rails_com'
+import 'stimulus_com'
+import 'default_form'
 import 'moment'
