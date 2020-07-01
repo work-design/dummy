@@ -8,7 +8,6 @@ gem 'puma'
 gem 'sidekiq'
 gem 'sqlite3'
 gem 'redis'
-gem 'qiniu_rails', github: 'qinmingyuan/qiniu_rails'
 gem 'turbolinks'
 gem 'webpacker', require: File.exist?('config/webpacker.yml')
 
