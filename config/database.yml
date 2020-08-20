@@ -3,6 +3,7 @@ default: &default
   pool: 5
   timeout: 5000
   username: ubuntu
+  password:
   host: localhost
   port: 5432
 
