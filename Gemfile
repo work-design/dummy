@@ -38,7 +38,6 @@ gem 'default_where', github: 'qinmingyuan/default_where'
 # Engines
 gem 'rails_com', github: 'work-design/rails_com'
 
-
 gem 'bootsnap', require: false
 gem 'amazing_print'
 gem 'pry-rails'

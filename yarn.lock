@@ -6965,6 +6965,11 @@ stdout-stream@^1.4.0:
   dependencies:
     readable-stream "^2.0.1"
 
+stickybits@^3.7.7:
+  version "3.7.7"
+  resolved "https://registry.yarnpkg.com/stickybits/-/stickybits-3.7.7.tgz#4e644022e7e7ce924d34fbbf7eff7d2f5d8c5dd3"
+  integrity sha512-w8slCLqIESiIl8sP3v9wXNWfzrPHPOg2W6tsCfTkStrtfMoFnk0LSHpUJC7xx1yhNEKpljZJYL9T8RkZkSdqpQ==
+
 "stimulus@https://github.com/qinmingyuan/stimulus/releases/download/v1.4/stimulus.tar.gz":
   version "1.2.0"
   resolved "https://github.com/qinmingyuan/stimulus/releases/download/v1.4/stimulus.tar.gz#6ff1f989f66ed35d95b739014f56864bbddf9770"
