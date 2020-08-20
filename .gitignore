@@ -15,6 +15,7 @@ config/webpacker.yml
 public/assets
 public/packs
 public/packs-test
+public/packs_dev
 node_modules
 yarn-error.log
 yarn-debug.log*
