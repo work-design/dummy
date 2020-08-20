@@ -3,11 +3,13 @@ default: &default
   pool: 5
   timeout: 5000
   username: ubuntu
+  host: localhost
+  port: 5432
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: dummy_development
 
 test:
   <<: *default
-  database: db/test.sqlite3
+  database: dummy_test
