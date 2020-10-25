@@ -19,7 +19,6 @@ gem 'jbuilder'
 # Utils
 gem 'kaminari'
 gem 'acts_as_list'
-gem 'closure_tree', github: 'qinmingyuan/closure_tree'
 gem 'bcrypt'
 gem 'image_processing'
 
