@@ -6,7 +6,7 @@
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
-    "@rails/webpacker": "^5.1.1",
+    "@rails/webpacker": "https://github.com/rails/webpacker",
     "@stimulus/core": "https://github.com/qinmingyuan/stimulus/releases/download/v1.4/core.tar.gz",
     "@stimulus/multimap": "https://github.com/qinmingyuan/stimulus/releases/download/v1.4/multimap.tar.gz",
     "@stimulus/mutation-observers": "https://github.com/qinmingyuan/stimulus/releases/download/v1.4/mutation-observers.tar.gz",
