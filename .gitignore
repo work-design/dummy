@@ -22,3 +22,5 @@ yarn-debug.log*
 .yarn-integrity
 
 .lock-*
+
+vendor/bundle

@@ -21,6 +21,7 @@ gem 'kaminari'
 gem 'acts_as_list'
 gem 'bcrypt'
 gem 'image_processing'
+gem 'rqrcode'
 
 # apm
 gem 'scout_apm'
