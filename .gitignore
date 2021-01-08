@@ -25,4 +25,3 @@ yarn-debug.log*
 
 vendor/bundle
 
-/config/credentials/development.key
