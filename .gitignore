@@ -24,3 +24,5 @@ yarn-debug.log*
 .lock-*
 
 vendor/bundle
+
+/config/credentials/development.key
