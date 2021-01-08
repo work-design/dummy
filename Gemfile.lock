@@ -28,6 +28,16 @@ GIT
       rest-client
 
 GIT
+  remote: https://github.com/rails/webpacker.git
+  revision: 1aca8aaebd21a075d42e718d2b60dfba8e8d1b70
+  specs:
+    webpacker (6.0.0.beta.2)
+      activesupport (>= 5.2)
+      rack-proxy (>= 0.6.1)
+      railties (>= 5.2)
+      semantic_range (>= 2.3.0)
+
+GIT
   remote: https://github.com/work-design/rails_com.git
   revision: 34f5d34cb58cec62f3e62d67ca5bb2e2e1afcca0
   specs:
@@ -329,11 +339,6 @@ GEM
       nokogiri (~> 1.6)
       rubyzip (>= 1.3.0)
       selenium-webdriver (>= 3.0, < 4.0)
-    webpacker (5.2.1)
-      activesupport (>= 5.2)
-      rack-proxy (>= 0.6.1)
-      railties (>= 5.2)
-      semantic_range (>= 2.3.0)
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -379,7 +384,7 @@ DEPENDENCIES
   upyun_rails!
   web-console
   webdrivers
-  webpacker
+  webpacker!
 
 BUNDLED WITH
    2.2.3

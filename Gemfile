@@ -11,7 +11,7 @@ gem 'redis'
 
 # Assets
 gem 'turbolinks'
-gem 'webpacker', require: File.exist?('config/webpacker.yml')
+gem 'webpacker', github: 'rails/webpacker', require: File.exist?('config/webpacker.yml')
 
 # Views
 gem 'jbuilder'

@@ -1,11 +1,9 @@
 require.context('../images', true)
 
 // css
-import 'style_com/application'
-import 'choices_ext'
+import 'app'
 
-import 'rails_com'
+import 'rails_ui'
 import 'default_form'
-
 import 'moment'
 import 'choices.js'
