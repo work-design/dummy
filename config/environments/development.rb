@@ -39,4 +39,3 @@ Rails.application.routes.default_url_options = {
   host: 'lvh.me',
   port: 3000
 }
-ENV['EDITOR'] = 'code --wait'
