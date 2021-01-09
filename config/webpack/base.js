@@ -1,4 +1,4 @@
-const { webpackConfig, config, merge } = require('@rails/webpacker')
+const { webpackConfig, devServer, config, merge } = require('@rails/webpacker')
 const { resolve } = require('path')
 const paths = require('rails_ui')
 const customConfig = {
