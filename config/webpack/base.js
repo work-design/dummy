@@ -9,6 +9,7 @@ const customConfig = {
 
 webpackConfig.entry = Object.assign(paths(), webpackConfig.entry)
 webpackConfig.resolve.modules = webpackConfig.resolve.modules.concat(resolve('node_modules'))
+webpackConfig.devServer = devServer
 
 debugger
 
