@@ -39,7 +39,7 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_com.git
-  revision: 4c35dea7ca7b9e131c8dffbcd9d9a6a83f97f59f
+  revision: b35fc1ee3eb0b499c0eeac445b3ed6fe65b3284f
   specs:
     rails_com (1.2.9)
       acme-client
@@ -50,6 +50,13 @@ GIT
       httpx (~> 0.8)
       kaminari
       rails (~> 6.0)
+
+GIT
+  remote: https://github.com/work-design/rails_ui.git
+  revision: 9f7e5f7240ed3ae41c069c26a0d96cd4700bd512
+  specs:
+    rails_ui (0.1.0)
+      rails
 
 GEM
   remote: https://rubygems.org/
@@ -372,6 +379,7 @@ DEPENDENCIES
   puma
   rails (= 6.1.0)
   rails_com!
+  rails_ui!
   redis
   rqrcode
   scout_apm
