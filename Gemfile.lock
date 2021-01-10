@@ -20,6 +20,13 @@ GIT
       omniauth-oauth2 (~> 1.5)
 
 GIT
+  remote: https://github.com/qinmingyuan/turbo-rails.git
+  revision: 8ae288a23107d5d6ee31161ef5a58d5fe2d4c18e
+  specs:
+    turbo-rails (0.5.0)
+      rails (>= 6.0.0)
+
+GIT
   remote: https://github.com/qinmingyuan/upyun_rails.git
   revision: 4a6a7e77a6f7b2a5100a5eede83170e5de79312f
   specs:
@@ -388,6 +395,7 @@ DEPENDENCIES
   sidekiq
   spring
   spring-watcher-listen
+  turbo-rails!
   turbolinks
   upyun_rails!
   web-console
