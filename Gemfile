@@ -10,8 +10,8 @@ gem 'pg'
 gem 'redis'
 
 # Assets
-gem 'turbolinks'
 gem 'webpacker', github: 'rails/webpacker', require: File.exist?('config/webpacker.yml')
+gem 'turbo-rails', github: 'qinmingyuan/turbo-rails'
 
 # Views
 gem 'jbuilder'
@@ -30,7 +30,6 @@ gem 'server_timing'
 # Third Part
 gem 'omniauth-wechat-oauth2', github: 'qinmingyuan/omniauth-wechat-oauth2'
 gem 'upyun_rails', github: 'qinmingyuan/upyun_rails'
-gem 'turbo-rails', github: 'qinmingyuan/turbo-rails'
 
 # Rails Helpers
 gem 'default_form', github: 'qinmingyuan/default_form'

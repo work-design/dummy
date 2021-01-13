@@ -46,7 +46,7 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_com.git
-  revision: b500641f286784871ff1761e0557eb936d48c99a
+  revision: d4039fa0422225d4e760f343ad0b63ad95282e85
   specs:
     rails_com (1.2.9)
       acme-client
@@ -339,9 +339,6 @@ GEM
       sprockets (>= 3.0.0)
     thor (1.0.1)
     timers (4.3.2)
-    turbolinks (5.2.1)
-      turbolinks-source (~> 5.2)
-    turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unf (0.1.4)
@@ -399,7 +396,6 @@ DEPENDENCIES
   spring
   spring-watcher-listen
   turbo-rails!
-  turbolinks
   upyun_rails!
   web-console
   webdrivers
