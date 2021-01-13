@@ -11,7 +11,6 @@ gem 'redis'
 
 # Assets
 gem 'webpacker', github: 'rails/webpacker', require: File.exist?('config/webpacker.yml')
-gem 'turbo-rails', github: 'hotwired/turbo-rails', branch: 'main'
 
 # Views
 gem 'jbuilder'
@@ -38,6 +37,7 @@ gem 'default_where', github: 'qinmingyuan/default_where'
 # Engines
 gem 'rails_ui', github: 'work-design/rails_ui'
 gem 'rails_com', github: 'work-design/rails_com'
+gem 'turbo-rails', github: 'hotwired/turbo-rails', branch: 'main'
 
 gem 'bootsnap', require: false
 gem 'amazing_print'
