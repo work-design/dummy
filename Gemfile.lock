@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/hotwired/turbo-rails.git
+  revision: 32b7af782136d60bb0712614c0d85a76475e6fb7
+  branch: main
+  specs:
+    turbo-rails (0.5.4)
+      rails (>= 6.0.0)
+
+GIT
   remote: https://github.com/qinmingyuan/default_form.git
   revision: 1e72c95dd3d13dbfa70661d63bdf644169c8d03f
   specs:
@@ -18,13 +26,6 @@ GIT
   specs:
     omniauth-wechat-oauth2 (0.1.0)
       omniauth-oauth2 (~> 1.5)
-
-GIT
-  remote: https://github.com/qinmingyuan/turbo-rails.git
-  revision: 495eb1e34463db9ace802eee8b5338ef6e178e43
-  specs:
-    turbo-rails (0.5.3)
-      rails (>= 6.0.0)
 
 GIT
   remote: https://github.com/qinmingyuan/upyun_rails.git

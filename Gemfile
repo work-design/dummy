@@ -11,7 +11,7 @@ gem 'redis'
 
 # Assets
 gem 'webpacker', github: 'rails/webpacker', require: File.exist?('config/webpacker.yml')
-gem 'turbo-rails', github: 'qinmingyuan/turbo-rails'
+gem 'turbo-rails', github: 'hotwired/turbo-rails', branch: 'main'
 
 # Views
 gem 'jbuilder'
