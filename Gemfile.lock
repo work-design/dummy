@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/hotwired/turbo-rails.git
-  revision: 32b7af782136d60bb0712614c0d85a76475e6fb7
+  revision: ccfa8ef647d538fe4bcb0e9d775af3e0baf5d39b
   branch: main
   specs:
-    turbo-rails (0.5.4)
+    turbo-rails (0.5.9)
       rails (>= 6.0.0)
 
 GIT
@@ -37,9 +37,9 @@ GIT
 
 GIT
   remote: https://github.com/rails/webpacker.git
-  revision: 1aca8aaebd21a075d42e718d2b60dfba8e8d1b70
+  revision: a3c1d75ed23981d39ff782a36128b306d12cc5d9
   specs:
-    webpacker (6.0.0.beta.2)
+    webpacker (6.0.0.beta.5)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
@@ -61,7 +61,7 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_ui.git
-  revision: 9f7e5f7240ed3ae41c069c26a0d96cd4700bd512
+  revision: 70a4606bb55433d63c9b76516e4f6e8471a6680a
   specs:
     rails_ui (0.1.0)
       rails
@@ -135,22 +135,22 @@ GEM
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     amazing_print (1.2.2)
-    ast (2.4.1)
+    ast (2.4.2)
     bcrypt (3.1.16)
     bindex (0.8.1)
     binding_of_caller (1.0.0)
       debug_inspector (>= 0.0.1)
-    bootsnap (1.5.1)
+    bootsnap (1.7.2)
       msgpack (~> 1.0)
     builder (3.2.4)
     byebug (11.1.3)
-    capybara (3.34.0)
+    capybara (3.35.3)
       addressable
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
       rack (>= 1.6.0)
       rack-test (>= 0.6.3)
-      regexp_parser (~> 1.5)
+      regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
     childprocess (3.0.0)
     chunky_png (1.4.0)
@@ -158,7 +158,7 @@ GEM
       activerecord (>= 4.2.10)
       with_advisory_lock (>= 4.0.0)
     coderay (1.1.3)
-    concurrent-ruby (1.1.7)
+    concurrent-ruby (1.1.8)
     connection_pool (2.2.3)
     crass (1.0.6)
     debug_inspector (1.0.0)
@@ -187,12 +187,12 @@ GEM
     httpx (0.11.1)
       http-2-next (>= 0.1.2)
       timers
-    i18n (1.8.7)
+    i18n (1.8.8)
       concurrent-ruby (~> 1.0)
     image_processing (1.12.1)
       mini_magick (>= 4.9.5, < 5)
       ruby-vips (>= 2.0.17, < 3)
-    jbuilder (2.10.1)
+    jbuilder (2.11.2)
       activesupport (>= 5.0.0)
     jwt (2.2.2)
     kaminari (1.2.1)
@@ -207,10 +207,10 @@ GEM
       activerecord
       kaminari-core (= 1.2.1)
     kaminari-core (1.2.1)
-    listen (3.4.0)
+    listen (3.4.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.8.0)
+    loofah (2.9.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -226,12 +226,12 @@ GEM
     mini_mime (1.0.2)
     mini_portile2 (2.5.0)
     minitest (5.14.3)
-    msgpack (1.3.3)
+    msgpack (1.4.2)
     multi_json (1.15.0)
     multi_xml (0.6.0)
     multipart-post (2.1.1)
     netrc (0.11.0)
-    nio4r (2.5.4)
+    nio4r (2.5.5)
     nokogiri (1.11.1)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
@@ -241,7 +241,7 @@ GEM
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
-    omniauth (2.0.0)
+    omniauth (2.0.2)
       hashie (>= 3.4.6)
       rack (>= 1.6.2, < 3)
       rack-protection
@@ -251,16 +251,16 @@ GEM
     parser (3.0.0.0)
       ast (~> 2.4.1)
     pg (1.2.3)
-    pry (0.13.1)
+    pry (0.14.0)
       coderay (~> 1.1)
       method_source (~> 1.0)
     pry-rails (0.3.9)
       pry (>= 0.10.4)
-    pry-stack_explorer (0.6.0)
+    pry-stack_explorer (0.6.1)
       binding_of_caller (~> 1.0)
       pry (~> 0.13)
     public_suffix (4.0.6)
-    puma (5.1.1)
+    puma (5.2.1)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
@@ -301,7 +301,7 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     redis (4.2.5)
-    regexp_parser (1.8.2)
+    regexp_parser (2.0.3)
     rest-client (2.1.0)
       http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
@@ -313,9 +313,9 @@ GEM
     rqrcode_core (0.2.0)
     ruby-vips (2.0.17)
       ffi (~> 1.9)
-    ruby2_keywords (0.0.2)
+    ruby2_keywords (0.0.4)
     rubyzip (2.3.0)
-    scout_apm (2.6.10)
+    scout_apm (4.0.3)
       parser
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
@@ -323,7 +323,7 @@ GEM
     semantic_range (2.3.1)
     server_timing (1.0.2)
       scout_apm
-    sidekiq (6.1.2)
+    sidekiq (6.1.3)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
@@ -338,7 +338,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    thor (1.0.1)
+    thor (1.1.0)
     timers (4.3.2)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
@@ -350,7 +350,7 @@ GEM
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webdrivers (4.4.2)
+    webdrivers (4.5.0)
       nokogiri (~> 1.6)
       rubyzip (>= 1.3.0)
       selenium-webdriver (>= 3.0, < 4.0)

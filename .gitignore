@@ -11,6 +11,7 @@ tmp/*
 
 config/master.key
 config/webpacker.yml
+config/database.yml
 
 public/assets
 public/packs
