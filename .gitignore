@@ -1,3 +1,5 @@
+.pryrc
+
 db/schema.rb
 db/*.sqlite3
 db/*.sqlite3-*
