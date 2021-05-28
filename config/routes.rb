@@ -2,9 +2,13 @@ Rails.application.routes.draw do
 
   root to: 'home#index'
   namespace :board, defaults: { namespace: 'board' } do
-    root '/board/home#index'
+    root 'home#index'
   end
-
-  mount RailsAuth::Engine, at: '/' if defined? RailsAuth
+  namespace :panel, defaults: { namespace: 'panel' } do
+    root 'home#index'
+  end
+  namespace :my, defaults: { namespace: 'my' } do
+    root 'home#index'
+  end
 
 end
