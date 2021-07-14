@@ -8,7 +8,7 @@ log/*
 tmp/*
 !/tmp/.keep
 
-config/credentials/*
+config/credentials/*.yml.enc
 
 public/assets
 node_modules
