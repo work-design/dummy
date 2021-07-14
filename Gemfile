@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'rails', '6.1.3.2'
+gem 'rails', '6.1.4'
 gem 'puma'
 gem 'sidekiq'
 
@@ -11,7 +11,7 @@ gem 'redis'
 gem 'active_record_distinct_on'
 
 # Assets
-gem 'webpacker', '6.0.0.beta.6', require: File.exist?('config/webpacker.yml')
+gem 'viter', github: 'qinmingyuan/viter'
 
 # Views
 gem 'jbuilder'
