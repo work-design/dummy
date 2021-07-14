@@ -6,8 +6,8 @@ default: &default
 
 development:
   <<: *default
-  url: postgres://postgres:postgres@localhost/dummy_development
+  url: <%= Rails.application.credentials.postgres.dev %>
 
 test:
   <<: *default
-  url: postgres://postgres:postgres@localhost/dummy_test
+  url: <%= Rails.application.credentials.postgres.test %>
