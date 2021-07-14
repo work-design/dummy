@@ -6,8 +6,8 @@ default: &default
 
 development:
   <<: *default
-  url: postgres://postgres:postgres@postgres/dummy_development
+  url: postgres://postgres:postgres@localhost/dummy_development
 
 test:
   <<: *default
-  url: postgres://postgres:postgres@postgres/dummy_test
+  url: postgres://postgres:postgres@localhost/dummy_test
