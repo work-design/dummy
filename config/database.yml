@@ -6,8 +6,8 @@ default: &default
 
 development:
   <<: *default
-  url: <%= Rails.application.credentials.postgres.dev %>
+  url: <%= Rails.application.credentials.postgres[:dev] %>
 
 test:
   <<: *default
-  url: <%= Rails.application.credentials.postgres.test %>
+  url: <%= Rails.application.credentials.postgres[:test] %>
