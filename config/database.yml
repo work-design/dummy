@@ -2,15 +2,12 @@ default: &default
   adapter: postgresql
   pool: 5
   timeout: 5000
-  username: runner
-  password: runner
-  host: 127.0.0.1
   port: 5432
 
 development:
   <<: *default
-  database: dummy_development
+  url: postgres://postgres:postgres@localhost/dummy_development
 
 test:
   <<: *default
-  database: dummy_test
+  url: postgres://postgres:postgres@localhost/dummy_test

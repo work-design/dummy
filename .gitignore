@@ -12,13 +12,8 @@ tmp/*
 !/tmp/.keep
 
 config/master.key
-config/webpacker.yml
-config/database.yml
 
 public/assets
-public/packs
-public/packs-test
-public/packs-dev
 node_modules
 yarn-error.log
 yarn-debug.log*
