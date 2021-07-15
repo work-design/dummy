@@ -9,6 +9,7 @@ tmp/*
 !/tmp/.keep
 
 config/credentials/*.yml.enc
+config/viter.yml
 
 public/assets
 node_modules
