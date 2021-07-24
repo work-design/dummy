@@ -20,6 +20,7 @@
     "weui.js": "^1.2.2"
   },
   "devDependencies": {
+    "postcss-import": "^14.0.2",
     "sass": "^1.30.0"
   }
 }
