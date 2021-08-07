@@ -1,13 +1,13 @@
 GIT
   remote: https://github.com/qinmingyuan/default_form.git
-  revision: 8ad70c8c6a1b76cc770ac180a1b281f874d3ef91
+  revision: 476ba7231079b1071415ad4e953b55ce16ae1d0d
   specs:
     default_form (1.5.1)
       rails_com (~> 1.2)
 
 GIT
   remote: https://github.com/qinmingyuan/default_where.git
-  revision: bf2bf8c5ddce69f12cd11c28f0fdabe3e1cc7d6c
+  revision: f3a5fafcafd4eaffc0c8eff1385e12c7bd939e83
   specs:
     default_where (2.2.3)
       activerecord (>= 4.0, <= 7.0)
@@ -29,14 +29,14 @@ GIT
 
 GIT
   remote: https://github.com/qinmingyuan/viter.git
-  revision: 7e67bf86c44f0c95c918d631df253e0f824caf15
+  revision: f007952bb7cf5f1c30d56d0bbb9b1c37bc73317e
   specs:
     viter (0.1.0)
       rails
 
 GIT
   remote: https://github.com/work-design/rails_com.git
-  revision: ee517ffe0b36b1007196df8e86e5f611c0ba38cf
+  revision: 7fc0febef0c859540d88ea3d83937248279d92e0
   specs:
     rails_com (1.2.9)
       acme-client
@@ -51,7 +51,7 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_ui.git
-  revision: 092c9bcf325a2c4f609bb74a18e65bd07cd66017
+  revision: 5d3fd79f49b4cce75fe0602993b1ad174742280e
   specs:
     rails_ui (0.1.0)
       rails
@@ -188,7 +188,7 @@ GEM
     http-cookie (1.0.4)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
-    httpx (0.15.4)
+    httpx (0.16.0)
       http-2-next (>= 0.4.1)
       timers
     i18n (1.8.10)
