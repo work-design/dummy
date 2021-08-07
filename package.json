@@ -16,10 +16,13 @@
     "stickybits": "^3.7.7",
     "stimulus": "^2.0.0",
     "viter": "https://github.com/qinmingyuan/viter.git",
+    "vue": "^3.0.5",
     "weui": "^2.4.4",
     "weui.js": "^1.2.2"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^1.4.0",
+    "@vue/compiler-sfc": "^3.1.5",
     "postcss-import": "^14.0.2",
     "postcss-preset-env": "^6.7.0",
     "sass": "^1.30.0"
