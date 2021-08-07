@@ -1,1 +1,1 @@
-Mime::Type.register 'text/vue', :vue
+Mime::Type.register 'text/html', :vue
