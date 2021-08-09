@@ -2146,7 +2146,7 @@ vite@^2.3.8:
     path-complete-extname "^1.0.0"
     vite "^2.3.8"
 
-vue@^3.0.5:
+vue@^3.1.5:
   version "3.1.5"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.1.5.tgz#12879b11d0685ee4478c8869551799630a52f9fe"
   integrity sha512-Ho7HNb1nfDoO+HVb6qYZgeaobt1XbY6KXFe4HGs1b9X6RhkWG/113n4/SrtM1LUclM6OrP/Se5aPHHvAPG1iVQ==

@@ -16,7 +16,7 @@
     "stickybits": "^3.7.7",
     "stimulus": "^2.0.0",
     "viter": "https://github.com/qinmingyuan/viter.git",
-    "vue": "^3.0.5",
+    "vue": "^3.1.5",
     "weui": "^2.4.4",
     "weui.js": "^1.2.2"
   },

@@ -10,10 +10,3 @@ import '@fortawesome/fontawesome-free/css/all.css'
 
 import 'rails_ui_engine_ui/javascripts/rails_ui'
 import 'default_form_engine_ui/javascripts/default_form'
-
-
-import { createApp } from 'vue'
-
-const app = createApp({})
-app.config.performance = true
-app.mount('#app')
