@@ -2137,10 +2137,10 @@ vite@^2.3.8:
   optionalDependencies:
     fsevents "~2.3.2"
 
-vite_rails@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/vite_rails/-/vite_rails-0.0.1.tgz#4f84691dd801f88b0eb0fe4f86194809b3e6708a"
-  integrity sha512-kg7b/4GWIcURNSOmMNqTAxEynbtJMHfckpvK1rw6NQfrVCGMQsBKOJgmaG48/kLwV+A8GzIC5mnWTVA6VQPu3A==
+vite_rails@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/vite_rails/-/vite_rails-0.0.2.tgz#e063445f266559cd058b677282b4d56161b330fd"
+  integrity sha512-48V0/EDqgqT7cNsLoItD9jsIOjFH3kQ5py9NjG0QeXSI2yH1oOXs+g32349nVTWsOIFIVcmjRWFpXTY6k0+0bw==
   dependencies:
     glob "^7.1.7"
     js-yaml "^4.1.0"
