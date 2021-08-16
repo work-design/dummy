@@ -1,4 +1,4 @@
-const { viteConfig } = require('viter_rails')
+const { viteConfig } = require('vite_rails')
 
 debugger
 
