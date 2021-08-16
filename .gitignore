@@ -12,6 +12,7 @@ config/credentials/*.yml.enc
 config/viter.yml
 
 public/assets
+public/manifest.json
 node_modules
 yarn-error.log
 yarn-debug.log*
