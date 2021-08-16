@@ -2137,9 +2137,10 @@ vite@^2.3.8:
   optionalDependencies:
     fsevents "~2.3.2"
 
-"viter@https://github.com/qinmingyuan/viter.git":
-  version "0.1.4"
-  resolved "https://github.com/qinmingyuan/viter.git#68ce625e7f44167e37d8f4e15a54716ab854e731"
+vite_rails@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/vite_rails/-/vite_rails-0.0.1.tgz#4f84691dd801f88b0eb0fe4f86194809b3e6708a"
+  integrity sha512-kg7b/4GWIcURNSOmMNqTAxEynbtJMHfckpvK1rw6NQfrVCGMQsBKOJgmaG48/kLwV+A8GzIC5mnWTVA6VQPu3A==
   dependencies:
     glob "^7.1.7"
     js-yaml "^4.1.0"
