@@ -11,3 +11,7 @@ development:
 test:
   <<: *default
   url: <%= ENV['POSTGRES_URL'] || Rails.application.credentials.postgres[:test] %>
+
+production:
+  <<: *default
+  url: <%= ENV['POSTGRES_URL'] || Rails.application.credentials.postgres[:pro] %>
