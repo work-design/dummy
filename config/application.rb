@@ -10,8 +10,8 @@ module Dummy
     config.i18n.default_locale = :zh
 
     config.hosts += [
-      'test.one.work',
-      '*.work.design'
+      '.one.work',
+      '.work.design'
     ]
   end
 end
