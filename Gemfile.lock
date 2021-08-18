@@ -211,9 +211,6 @@ GEM
       activerecord
       kaminari-core (= 1.2.1)
     kaminari-core (1.2.1)
-    listen (3.6.0)
-      rb-fsevent (~> 0.10, >= 0.10.3)
-      rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.10.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -297,9 +294,6 @@ GEM
       rake (>= 0.13)
       thor (~> 1.0)
     rake (13.0.6)
-    rb-fsevent (0.11.0)
-    rb-inotify (0.10.1)
-      ffi (~> 1.0)
     redis (4.3.1)
     regexp_parser (2.1.1)
     rest-client (2.1.0)
@@ -326,10 +320,6 @@ GEM
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
-    spring (2.1.1)
-    spring-watcher-listen (2.0.1)
-      listen (>= 2.7, < 4.0)
-      spring (>= 1.2, < 3.0)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -381,7 +371,6 @@ DEPENDENCIES
   image_processing
   jbuilder
   kaminari
-  listen
   omniauth-wechat-oauth2!
   pg
   pry-rails
@@ -396,8 +385,6 @@ DEPENDENCIES
   selenium-webdriver
   server_timing
   sidekiq
-  spring
-  spring-watcher-listen
   turbo-rails
   upyun_rails!
   viter!
