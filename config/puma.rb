@@ -5,3 +5,5 @@ before_fork do
 end
 
 state_path "#{File.expand_path('tmp/sockets/puma.state', dir)}"
+binding.pry
+environment ENV.fetch("RAILS_ENV") { "development" }
