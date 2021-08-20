@@ -16,11 +16,6 @@ pidfile ENV.fetch('PIDFILE') { 'tmp/pids/server.pid' }
 #bind "unix://#{File.expand_path('tmp/sockets/puma.sock', dir)}"
 state_path 'tmp/sockets/puma.state'
 activate_control_app "unix://#{File.expand_path('tmp/sockets/pumactl.sock', dir)}"
-stdout_redirect(
-  "#{File.expand_path('log/puma.stdout.log', dir)}",
-  "#{File.expand_path('log/puma.stdout.log', dir)}",
-  true
-)
 
 before_fork do
   ActiveRecord::Base.connection_pool.disconnect!
