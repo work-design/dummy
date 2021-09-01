@@ -44,12 +44,9 @@ gem 'turbo-rails'
 
 gem 'bootsnap', require: false
 gem 'amazing_print'
-gem 'pry-rails'
 
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'pry-stack_explorer'
-  gem 'factory_bot_rails'
+  gem 'debug', '>= 1.0.0.beta'
 end
 
 group :development do
