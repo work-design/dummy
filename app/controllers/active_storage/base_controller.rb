@@ -2,7 +2,7 @@
 
 # Override controller in active storage library
 class ActiveStorage::BaseController < ActionController::Base
-  include ActiveStorage::Streaming
+  include ActiveStorage::Streaming if defined? ActiveStorage::Streaming
 
   protect_from_forgery with: :exception
 
