@@ -1,11 +1,4 @@
 GIT
-  remote: https://github.com/qinmingyuan/default_form.git
-  revision: 476ba7231079b1071415ad4e953b55ce16ae1d0d
-  specs:
-    default_form (1.5.1)
-      rails_com (~> 1.2)
-
-GIT
   remote: https://github.com/qinmingyuan/default_where.git
   revision: bd6a1950ec0aea030cf741a38b58111a20d14b38
   specs:
@@ -36,7 +29,7 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_com.git
-  revision: 4cc05071b7600f8d87619ec842a376e0b9a1a5fb
+  revision: dc4b41a0cde44bf6585ff67c1c27e2a106f2e063
   specs:
     rails_com (1.2.9)
       acme-client
@@ -51,7 +44,7 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_ui.git
-  revision: 75f6e0066cd052b2c050ff1103a05099f4ef984e
+  revision: b915e58f8582043db65dccf5ea014fc73ef98dc6
   specs:
     rails_ui (0.0.1)
       rails
@@ -356,7 +349,6 @@ DEPENDENCIES
   bootsnap
   capybara
   debug (>= 1.0.0.beta)
-  default_form!
   default_where!
   image_processing
   jbuilder

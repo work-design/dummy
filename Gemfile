@@ -32,7 +32,6 @@ gem 'omniauth-wechat-oauth2', github: 'qinmingyuan/omniauth-wechat-oauth2'
 gem 'upyun_rails', github: 'qinmingyuan/upyun_rails'
 
 # Rails Helpers
-gem 'default_form', github: 'qinmingyuan/default_form'
 gem 'default_where', github: 'qinmingyuan/default_where'
 
 # Engines
