@@ -35,7 +35,7 @@ gem 'upyun_rails', github: 'qinmingyuan/upyun_rails'
 gem 'default_where', github: 'qinmingyuan/default_where'
 
 # Engines
-gem 'rails_ui', github: 'work-design/rails_ui'
+gem 'rails_design', github: 'work-design/rails_design'
 gem 'rails_com', github: 'work-design/rails_com'
 
 # Should after rails_com
