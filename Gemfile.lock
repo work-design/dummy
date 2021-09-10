@@ -143,8 +143,9 @@ GEM
     concurrent-ruby (1.1.9)
     connection_pool (2.2.5)
     crass (1.0.6)
-    debug (1.0.0.beta8)
+    debug (1.0.0)
       irb
+      reline (>= 0.2.7)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.10.0)
@@ -351,7 +352,7 @@ DEPENDENCIES
   bcrypt
   bootsnap
   capybara
-  debug (>= 1.0.0.beta)
+  debug (>= 1.0.0)
   default_where!
   image_processing
   jbuilder

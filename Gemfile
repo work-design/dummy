@@ -45,7 +45,7 @@ gem 'bootsnap', require: false
 gem 'amazing_print'
 
 group :development, :test do
-  gem 'debug', '>= 1.0.0.beta'
+  gem 'debug', '>= 1.0.0'
 end
 
 group :development do
