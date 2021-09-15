@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_com.git
-  revision: 8949509c4f26ecf76adecfdbb2e221535ee47ac0
+  revision: 953ef46899c750d41ea6e09aba71c9376363e1ce
   specs:
     rails_com (1.2.9)
       acme-client
@@ -45,10 +45,17 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_design.git
-  revision: c8d7bfe6d598c9433373e4e8c0e7c17ebc98b17a
+  revision: 092a58af67ee302612df8cb5416149f6b9c7890a
   specs:
     rails_design (0.0.1)
       rails
+
+GIT
+  remote: https://github.com/work-design/rails_extend.git
+  revision: ef2aa3492d3d214a8d60cb6322c39d2e568adb74
+  specs:
+    rails_extend (1.0.0)
+      rails (>= 6.0)
 
 GEM
   remote: https://rubygems.org/
@@ -93,8 +100,6 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
-    active_record_distinct_on (1.1.0)
-      activerecord (>= 5.2, < 6.2)
     activejob (6.1.4.1)
       activesupport (= 6.1.4.1)
       globalid (>= 0.3.6)
@@ -271,8 +276,6 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
-    rails_extend (1.0.0)
-      rails (>= 6.1)
     railties (6.1.4.1)
       actionpack (= 6.1.4.1)
       activesupport (= 6.1.4.1)
@@ -346,23 +349,21 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_record_distinct_on
-  acts_as_list
   amazing_print
   bcrypt
   bootsnap
   capybara
-  debug (>= 1.0.0)
+  debug
   default_where!
   image_processing
   jbuilder
-  kaminari
   omniauth-wechat-oauth2!
   pg
   puma
   rails (~> 6.1)
   rails_com!
   rails_design!
+  rails_extend!
   redis
   rqrcode
   scout_apm

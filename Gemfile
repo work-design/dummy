@@ -8,7 +8,7 @@ gem 'sidekiq'
 # Store
 gem 'pg'
 gem 'redis'
-gem 'active_record_distinct_on'
+#gem 'active_record_distinct_on'
 
 # Assets
 gem 'viter', github: 'qinmingyuan/viter'
@@ -17,8 +17,6 @@ gem 'viter', github: 'qinmingyuan/viter'
 gem 'jbuilder'
 
 # Utils
-gem 'kaminari'
-gem 'acts_as_list'
 gem 'bcrypt'
 gem 'image_processing'
 gem 'rqrcode'
@@ -37,6 +35,7 @@ gem 'default_where', github: 'qinmingyuan/default_where'
 # Engines
 gem 'rails_design', github: 'work-design/rails_design'
 gem 'rails_com', github: 'work-design/rails_com'
+gem 'rails_extend', github: 'work-design/rails_extend'
 
 # Should after rails_com
 gem 'turbo-rails'
@@ -45,7 +44,7 @@ gem 'bootsnap', require: false
 gem 'amazing_print'
 
 group :development, :test do
-  gem 'debug', '>= 1.0.0'
+  gem 'debug'
 end
 
 group :development do
