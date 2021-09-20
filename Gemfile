@@ -49,6 +49,7 @@ end
 
 group :development do
   gem 'web-console'
+  gem 'localhost', require: 'localhost/authority'
 end
 
 group :test do
