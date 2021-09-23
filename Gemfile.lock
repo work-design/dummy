@@ -21,13 +21,6 @@ GIT
       rest-client
 
 GIT
-  remote: https://github.com/qinmingyuan/viter.git
-  revision: 82d46c2eed89cc27b89811e3ded0cb6797f3b807
-  specs:
-    viter (0.1)
-      rails
-
-GIT
   remote: https://github.com/work-design/rails_com.git
   revision: 2377ede7104b675247bf7b26bc279591d54d0a21
   specs:
@@ -46,17 +39,24 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_design.git
-  revision: 983c9a36320b2563c72cdc7e344bcdb752b60e5c
+  revision: 383e4a7423663c8233b14d1eeaec2507569310ca
   specs:
     rails_design (0.0.1)
       rails
 
 GIT
   remote: https://github.com/work-design/rails_extend.git
-  revision: c51aad1277fff57c53409a2c4c6c4e90461463d5
+  revision: 55221ffc89fed5836a60bdc037bfa727ef3fd048
   specs:
     rails_extend (1.0.0)
       rails (>= 5.0)
+
+GIT
+  remote: https://github.com/work-design/rails_vite.git
+  revision: ef130e9069c8f980bcc749dfbdeb026c632d4b8a
+  specs:
+    rails_vite (0.0.1)
+      rails
 
 GEM
   remote: https://rubygems.org/
@@ -215,7 +215,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
-    marcel (1.0.1)
+    marcel (1.0.2)
     method_source (1.0.0)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
@@ -358,7 +358,6 @@ DEPENDENCIES
   debug
   default_where!
   image_processing
-  jbuilder
   localhost
   omniauth-wechat-oauth2!
   pg
@@ -367,6 +366,7 @@ DEPENDENCIES
   rails_com!
   rails_design!
   rails_extend!
+  rails_vite!
   redis
   rqrcode
   scout_apm
@@ -375,7 +375,6 @@ DEPENDENCIES
   sidekiq
   turbo-rails
   upyun_rails!
-  viter!
   web-console
   webdrivers
 

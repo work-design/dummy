@@ -10,12 +10,6 @@ gem 'pg'
 gem 'redis'
 #gem 'active_record_distinct_on'
 
-# Assets
-gem 'viter', github: 'qinmingyuan/viter'
-
-# Views
-gem 'jbuilder'
-
 # Utils
 gem 'bcrypt'
 gem 'image_processing'
@@ -33,8 +27,9 @@ gem 'upyun_rails', github: 'qinmingyuan/upyun_rails'
 gem 'default_where', github: 'qinmingyuan/default_where'
 
 # Engines
-gem 'rails_design', github: 'work-design/rails_design'
 gem 'rails_com', github: 'work-design/rails_com'
+gem 'rails_vite', github: 'work-design/rails_vite'
+gem 'rails_design', github: 'work-design/rails_design'
 gem 'rails_extend', github: 'work-design/rails_extend'
 
 # Should after rails_com
