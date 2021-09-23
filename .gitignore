@@ -1,5 +1,3 @@
-.pryrc
-
 db/schema.rb
 
 log/*
@@ -9,7 +7,7 @@ tmp/*
 !/tmp/.keep
 
 config/credentials/*.yml.enc
-config/viter.yml
+config/vite.yml
 
 public/assets
 public/manifest.json
