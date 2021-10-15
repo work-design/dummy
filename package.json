@@ -2,7 +2,6 @@
   "name": "dummy",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
     "@rails/actioncable": "^6.1.4",
     "@rails/activestorage": "^6.1.4",
     "bulma": "^0.9.2",
@@ -12,10 +11,8 @@
     "moment": "^2.27.0",
     "sortablejs": "^1.10.2",
     "stickybits": "^3.7.7",
-    "vite_rails": "^0.0.2",
-    "vue": "^3.1.5",
-    "weui": "^2.4.4",
-    "weui.js": "^1.2.2"
+    "rails_vite": "^0.0.5",
+    "weui": "^2.4.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.4.0",
