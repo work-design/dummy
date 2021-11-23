@@ -22,9 +22,9 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_com.git
-  revision: 1e2f7f62cb8223f0e9ceb679f1c9093d73c0501f
+  revision: 055e59792c175864d26a84af51ad2e74c9c24767
   specs:
-    rails_com (1.2.9)
+    rails_com (1.3.0)
       acme-client
       acts_as_list (>= 1.0)
       closure_tree (>= 7.3)
@@ -33,22 +33,26 @@ GIT
       httpx (~> 0.16)
       jbuilder
       kaminari
+      net-http
+      net-imap
+      net-pop
+      net-smtp
       rails (>= 6.1)
       rails_extend
       turbo-rails
 
 GIT
   remote: https://github.com/work-design/rails_design.git
-  revision: f387f07b6078c40336fcefb6fcd1c3fe979db9b9
+  revision: 96922802fb9f21d43908bdd348d2bf9f3d0f7c7b
   specs:
     rails_design (0.0.1)
       rails
 
 GIT
   remote: https://github.com/work-design/rails_extend.git
-  revision: f339c960ec81768c1cc80190f0713f9766150082
+  revision: 0cff0413fd60ff3ce94a6815aa5ec7746efafd63
   specs:
-    rails_extend (1.0.0)
+    rails_extend (1.0.1)
       rails (>= 5.0)
 
 GIT
@@ -132,8 +136,9 @@ GEM
     bootsnap (1.9.1)
       msgpack (~> 1.0)
     builder (3.2.4)
-    capybara (3.35.3)
+    capybara (3.36.0)
       addressable
+      matrix
       mini_mime (>= 0.1.3)
       nokogiri (~> 1.8)
       rack (>= 1.6.0)
@@ -142,15 +147,16 @@ GEM
       xpath (~> 3.2)
     childprocess (4.1.0)
     chunky_png (1.4.0)
-    closure_tree (7.3.0)
+    closure_tree (7.4.0)
       activerecord (>= 4.2.10)
       with_advisory_lock (>= 4.0.0)
     concurrent-ruby (1.1.9)
     connection_pool (2.2.5)
     crass (1.0.6)
-    debug (1.2.4)
+    debug (1.3.4)
       irb (>= 1.3.6)
       reline (>= 0.2.7)
+    digest (3.0.0)
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.10.0)
@@ -176,7 +182,7 @@ GEM
     ffi (1.15.4)
     globalid (0.5.2)
       activesupport (>= 5.0)
-    hashie (4.1.0)
+    hashie (5.0.0)
     http-2-next (0.5.0)
     http-accept (1.7.0)
     http-cookie (1.0.4)
@@ -184,15 +190,16 @@ GEM
     http-form_data (2.3.0)
     httpx (0.18.0)
       http-2-next (>= 0.4.1)
-    i18n (1.8.10)
+    i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     image_processing (1.12.1)
       mini_magick (>= 4.9.5, < 5)
       ruby-vips (>= 2.0.17, < 3)
     io-console (0.5.9)
+    io-wait (0.2.1)
     irb (1.3.7)
       reline (>= 0.2.7)
-    jbuilder (2.11.2)
+    jbuilder (2.11.3)
       activesupport (>= 5.0.0)
     jwt (2.3.0)
     kaminari (1.2.1)
@@ -214,10 +221,11 @@ GEM
     mail (2.7.1)
       mini_mime (>= 0.1.1)
     marcel (1.0.2)
+    matrix (0.4.2)
     method_source (1.0.0)
-    mime-types (3.3.1)
+    mime-types (3.4.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2021.0901)
+    mime-types-data (3.2021.1115)
     mini_magick (4.11.0)
     mini_mime (1.1.2)
     mini_portile2 (2.6.1)
@@ -226,6 +234,24 @@ GEM
     multi_json (1.15.0)
     multi_xml (0.6.0)
     multipart-post (2.1.1)
+    net-http (0.2.0)
+      net-protocol
+      uri
+    net-imap (0.2.2)
+      digest
+      net-protocol
+      strscan
+    net-pop (0.1.1)
+      digest
+      net-protocol
+      timeout
+    net-protocol (0.1.2)
+      io-wait
+      timeout
+    net-smtp (0.3.0)
+      digest
+      net-protocol
+      timeout
     netrc (0.11.0)
     nio4r (2.5.8)
     nokogiri (1.12.5)
@@ -241,7 +267,7 @@ GEM
       hashie (>= 3.4.6)
       rack (>= 1.6.2, < 3)
       rack-protection
-    omniauth-oauth2 (1.7.1)
+    omniauth-oauth2 (1.7.2)
       oauth2 (~> 1.4)
       omniauth (>= 1.9, < 3)
     parser (3.0.2.0)
@@ -250,7 +276,7 @@ GEM
     public_suffix (4.0.6)
     puma (5.5.2)
       nio4r (~> 2.0)
-    racc (1.5.2)
+    racc (1.6.0)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
@@ -284,7 +310,7 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5.0.beta3)
     rake (13.0.6)
-    redis (4.5.0)
+    redis (4.5.1)
     regexp_parser (2.1.1)
     reline (0.2.7)
       io-console (~> 0.5)
@@ -298,46 +324,49 @@ GEM
       chunky_png (~> 1.0)
       rqrcode_core (~> 1.0)
     rqrcode_core (1.2.0)
-    ruby-vips (2.1.3)
+    ruby-vips (2.1.4)
       ffi (~> 1.12)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
-    scout_apm (4.1.2)
+    scout_apm (5.1.0)
       parser
-    selenium-webdriver (4.0.0)
+    selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
     server_timing (1.0.2)
       scout_apm
-    sidekiq (6.2.2)
+    sidekiq (6.3.1)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.2.2)
-      actionpack (>= 4.0)
-      activesupport (>= 4.0)
+    sprockets-rails (3.4.1)
+      actionpack (>= 5.2)
+      activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    strscan (3.0.1)
     thor (1.1.0)
-    turbo-rails (7.1.0)
+    timeout (0.2.0)
+    turbo-rails (0.8.3)
       rails (>= 6.0.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8)
-    web-console (4.1.0)
+    uri (0.11.0)
+    web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
       railties (>= 6.0.0)
-    webdrivers (4.7.0)
+    webdrivers (5.0.0)
       nokogiri (~> 1.6)
       rubyzip (>= 1.3.0)
-      selenium-webdriver (> 3.141, < 5.0)
+      selenium-webdriver (~> 4.0)
     websocket-driver (0.7.5)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -345,7 +374,7 @@ GEM
       activerecord (>= 4.2)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.5.0.beta6)
+    zeitwerk (2.5.1)
 
 PLATFORMS
   ruby
@@ -379,4 +408,4 @@ DEPENDENCIES
   webdrivers
 
 BUNDLED WITH
-   2.2.22
+   2.3.0.dev
