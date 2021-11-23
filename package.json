@@ -2,16 +2,10 @@
   "name": "dummy",
   "private": true,
   "dependencies": {
-    "@rails/actioncable": "^6.1.4",
-    "@rails/activestorage": "^6.1.4",
-    "bulma": "^0.9.2",
+    "@fortawesome/fontawesome-pro": "^6.0.0-beta3",
     "choices.js": "^9.0.1",
-    "core-js": "^3.6.5",
-    "moment": "^2.27.0",
     "rails_vite": "^0.0.5",
-    "sortablejs": "^1.10.2",
-    "stickybits": "^3.7.7",
-    "weui": "^2.4.4"
+    "stickybits": "^3.7.7"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.4.0",
