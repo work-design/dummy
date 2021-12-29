@@ -10,13 +10,17 @@
   * 集成 [vite](https://github.com/vitejs/vite)，由 [rails_vite](https://github.com/work-design/rails_vite) 实现,给你带来最佳的前端开发体验，比 Rails 7 默认的前端技术栈多了 HMR；
 * 最少改动：
   * 不用 copy `.example` 文件
-* 
+
 
 ## 如何使用
-如果是在本项目下运行 Rails，请使用`bundle exec rails`, 这样会正确设置ENV['BUNDLE_GEMFILE']的值。
+1. 安装依赖：
+  * 运行 `bundle`
+  * 运行 `yarn install`
+2. 个性化配置
+默认提供了基本的通用配置，存储于 config/credentials.yml.enc，具体配置可运行 `bin/rails credentials:show` 查看。 个性化配置在命令后加 `--environment [name]` 即可。config/credentials 默认提供了 development 环境和 test 环境的 key, 此举的意义是为了方便开发者之间相互分享 `config/credentials/[name].yml.enc` 文件。其中默认配置包含：
+  * db，[postgresql url 语法](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING)
+  * secret_key_base
 
-
-
-## Prepare
-* run `yarn install`
+## 注意
+* 如果是在本项目下运行 Rails，请使用 `bin/rails`, 这样会正确设置 ENV['BUNDLE_GEMFILE'] 的值；
 
