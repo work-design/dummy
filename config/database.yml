@@ -2,15 +2,10 @@ default: &default
   adapter: <%= ENV['DATABASE_ADAPTER'] || 'postgresql' %>
   pool: 5
   timeout: 5000
-
+  url: <%= ENV['DATABASE_URL'] || Rails.application.credentials.db %>
 development:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] || Rails.application.credentials.postgres[:dev] %>
-
 test:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] || Rails.application.credentials.postgres[:test] %>
-
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] || Rails.application.credentials.postgres[:pro] %>
