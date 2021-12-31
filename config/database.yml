@@ -7,5 +7,6 @@ development:
   <<: *default
 test:
   <<: *default
+  url: <%= Rails.application.credentials.db_test %>
 production:
   <<: *default
