@@ -8,8 +8,6 @@
     "stickybits": "^3.7.7"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^1.4.0",
-    "@vue/compiler-sfc": "^3.1.5",
     "postcss-import": "^14.0.2",
     "postcss-preset-env": "^6.7.0",
     "sass": "^1.30.0"
