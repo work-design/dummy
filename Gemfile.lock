@@ -337,7 +337,7 @@ GEM
       rubyzip (>= 1.2.2)
     server_timing (1.0.2)
       scout_apm
-    sidekiq (6.3.1)
+    sidekiq (6.4.0)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
