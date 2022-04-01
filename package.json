@@ -4,12 +4,14 @@
   "dependencies": {
     "@fortawesome/fontawesome-pro": "^6.0.0-beta3",
     "choices.js": "^9.0.1",
-    "rails_vite": "^0.0.5",
     "stickybits": "^3.7.7"
   },
   "devDependencies": {
     "postcss-import": "^14.0.2",
     "postcss-preset-env": "^6.7.0",
     "sass": "^1.30.0"
+  },
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds"
   }
 }
