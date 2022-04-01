@@ -3,21 +3,19 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 gem 'rails'
 gem 'puma'
-gem 'sidekiq'
+gem 'good_job'
 
 # Store
 gem 'pg'
 gem 'redis'
-#gem 'active_record_distinct_on'
 
 # Utils
 gem 'bcrypt'
 gem 'image_processing'
 gem 'rqrcode'
 
-# apm
-gem 'scout_apm'
-gem 'server_timing'
+# Assets
+gem 'jsbundling-rails'
 
 # Third Part
 gem 'omniauth-wechat-oauth2', github: 'qinmingyuan/omniauth-wechat-oauth2'
@@ -28,7 +26,6 @@ gem 'default_where', github: 'qinmingyuan/default_where'
 
 # Engines
 gem 'rails_com', github: 'work-design/rails_com'
-gem 'rails_vite', github: 'work-design/rails_vite'
 gem 'rails_design', github: 'work-design/rails_design'
 gem 'rails_extend', github: 'work-design/rails_extend'
 
