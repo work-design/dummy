@@ -9,7 +9,7 @@
   "devDependencies": {
     "postcss-import": "^14.0.2",
     "postcss-preset-env": "^6.7.0",
-    "sass": "^1.30.0"
+    "sass": "^1.49.10"
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds",
