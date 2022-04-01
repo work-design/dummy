@@ -16,6 +16,7 @@ gem 'rqrcode'
 
 # Assets
 gem 'jsbundling-rails'
+gem 'cssbundling-rails'
 
 # Third Part
 gem 'omniauth-wechat-oauth2', github: 'qinmingyuan/omniauth-wechat-oauth2'
