@@ -14,11 +14,6 @@ gem 'bcrypt'
 gem 'image_processing'
 gem 'rqrcode'
 
-# Assets
-gem 'jsbundling-rails'
-gem 'cssbundling-rails'
-gem 'propshaft'
-
 # Third Part
 gem 'omniauth-wechat-oauth2', github: 'qinmingyuan/omniauth-wechat-oauth2'
 gem 'upyun_rails', github: 'qinmingyuan/upyun_rails'
@@ -31,8 +26,9 @@ gem 'rails_com', github: 'work-design/rails_com'
 gem 'rails_design', github: 'work-design/rails_design'
 gem 'rails_extend', github: 'work-design/rails_extend'
 
-# Should after rails_com
+# Assets
 gem 'turbo-rails'
+gem 'propshaft'
 
 gem 'bootsnap', require: false
 gem 'amazing_print'
