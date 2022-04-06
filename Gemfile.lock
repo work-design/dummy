@@ -14,7 +14,7 @@ GIT
 
 GIT
   remote: https://github.com/qinmingyuan/upyun_rails.git
-  revision: 30621e3b6842fe8ca76dc0a3be09daf86f046ea6
+  revision: 4bc1d6ba1867fd3a88be4cf68e91d7443c717261
   specs:
     upyun_rails (0.1.0)
       activestorage
@@ -22,7 +22,7 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_com.git
-  revision: 2f627aabce397de46d282b5b54158d022e4eb979
+  revision: f5cbb46d5b1e9efe31af66bef81b37d6ad9d65b6
   specs:
     rails_com (1.3.0)
       acme-client
@@ -43,14 +43,14 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_design.git
-  revision: 0a78381f482b6d6980e50c11bf92f32bb565c632
+  revision: ccc3d59f88c245ac077a710c27f9f577181a30bf
   specs:
     rails_design (0.0.1)
       rails
 
 GIT
   remote: https://github.com/work-design/rails_extend.git
-  revision: 5acc5af075cece267ef64c571d1938d084555be1
+  revision: 56818ca0186fcd3aa4beb4cd93125c268e5f4a1b
   specs:
     rails_extend (1.0.1)
       rails (>= 5.0)
