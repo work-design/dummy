@@ -151,8 +151,6 @@ GEM
       with_advisory_lock (>= 4.0.0)
     concurrent-ruby (1.1.9)
     crass (1.0.6)
-    cssbundling-rails (1.1.0)
-      railties (>= 6.0.0)
     debug (1.4.0)
       irb (>= 1.3.6)
       reline (>= 0.2.7)
@@ -220,8 +218,6 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
-    jsbundling-rails (1.0.2)
-      railties (>= 6.0.0)
     jwt (2.3.0)
     kaminari (1.2.2)
       activesupport (>= 4.1.0)
@@ -275,7 +271,7 @@ GEM
       timeout
     netrc (0.11.0)
     nio4r (2.5.8)
-    nokogiri (1.13.3)
+    nokogiri (1.13.4)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     oauth2 (1.4.9)
@@ -395,12 +391,10 @@ DEPENDENCIES
   bcrypt
   bootsnap
   capybara
-  cssbundling-rails
   debug
   default_where!
   good_job
   image_processing
-  jsbundling-rails
   localhost
   omniauth-wechat-oauth2!
   pg
