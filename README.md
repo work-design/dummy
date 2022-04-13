@@ -21,14 +21,15 @@
   * secret_key_base
 
 ## 开始开发
-1. 启动 vite: `bin/vite`，vite 将启动静态资源（javascript/css/image）的开发编译；
-  * 注意检查 public 文件夹下是否存在 manifest.json 文件，如果该文件存在，则在本地使用的是编译后的静态资源；
-2. 启动 rails: `bin/rails`
-3. 浏览器里访问: `localhost:3000`
+1. 启动: `bin/dev`，将启动静态资源（javascript/css/image）的开发编译，命令包含：
+   * `yarn build --watch`： 编译 js
+   * `yarn build:css --watch`: 编译 css
+   * `bin/rails`: 启动 rails server
+2. 浏览器里访问: `localhost:3000`
 
 ## 部署
-1. 编译静态资源：`bin/vite build`
+* 编译静态资源：`rake assets:precompile`
 
 ## 注意
 * 如果是在本项目下运行 Rails，请使用 `bin/rails`, 这样会正确设置 ENV['BUNDLE_GEMFILE'] 的值；
-
+* 检查 public 文件夹下是否存在 manifest.json 文件，如果该文件存在，则在本地使用的是编译后的静态资源；
