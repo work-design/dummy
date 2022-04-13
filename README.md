@@ -7,7 +7,6 @@
 本项目具备如下特性：
 * 最佳实践：集成了 Work Design 的几个基础项目，给你带来了完全没有副作用的开发体验，包括：
   * 自动生成 migration: `bin/rails rails_extend:migrations`，[详见]()
-  * 集成 [vite](https://github.com/vitejs/vite)，由 [rails_vite](https://github.com/work-design/rails_vite) 实现,给你带来最佳的前端开发体验，比 Rails 7 默认的前端技术栈多了 [HMR](https://cn.vitejs.dev/guide/features.html#hot-module-replacement)；
 * 最少改动：
   * 不用 copy `.example` 文件
 
