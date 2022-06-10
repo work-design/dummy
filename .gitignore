@@ -19,6 +19,7 @@ yarn-debug.log*
 .yarn-integrity
 
 .lock-*
+.irb_history
 
 acme/*
 vendor/bundle
