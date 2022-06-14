@@ -7,6 +7,7 @@ tmp/*
 !/tmp/.keep
 
 config/credentials/development.yml.enc
+config/credentials/test.yml.enc
 config/credentials/production.key
 
 public/assets
