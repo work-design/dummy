@@ -14,15 +14,15 @@ GIT
 
 GIT
   remote: https://github.com/qinmingyuan/upyun_rails.git
-  revision: 4bc1d6ba1867fd3a88be4cf68e91d7443c717261
+  revision: 5e8af313d66eaef4a1ac4af2b363a02ba51bf0c8
   specs:
-    upyun_rails (0.1.0)
+    upyun_rails (0.1.1)
       activestorage
       rest-client
 
 GIT
   remote: https://github.com/work-design/rails_com.git
-  revision: 78a8cff9de1743360c09d7fd0fbf60ae26dc141d
+  revision: 70e0ae9c61b22a786999703a8ed4e08fdd269e00
   specs:
     rails_com (1.3.0)
       acme-client
@@ -39,14 +39,14 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_design.git
-  revision: 508285a637db588689055ffb8b2d580b454d14e2
+  revision: f608148c64c031cca6ddc61b222b268dfa01ad20
   specs:
     rails_design (0.0.1)
       rails
 
 GIT
   remote: https://github.com/work-design/rails_extend.git
-  revision: d0bf5a998f9d39e2a876f15b2cc1121eb752c601
+  revision: ed9b7fb71ffa5ee76fdd56c00eae2c5e72fe4f3b
   specs:
     rails_extend (1.0.1)
       rails (>= 5.0)
@@ -183,7 +183,7 @@ GEM
     http-cookie (1.0.5)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
-    httpx (0.20.0)
+    httpx (0.20.1)
       http-2-next (>= 0.4.1)
     i18n (1.10.0)
       concurrent-ruby (~> 1.0)
