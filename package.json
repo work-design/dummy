@@ -4,17 +4,15 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.1",
     "choices.js": "^9.0.1",
-    "esbuild": "^0.14.29",
-    "rails_design": "^0.0.6",
+    "rails_design": "^0.0.7",
     "stickybits": "^3.7.7"
   },
   "devDependencies": {
-    "postcss-import": "^14.0.2",
-    "postcss-preset-env": "^6.7.0",
+    "esbuild": "^0.15.9",
     "sass": "^1.49.10"
   },
   "scripts": {
     "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds",
-    "build:css": "sass ./app/assets/stylesheets/entrypoints:./app/assets/builds --no-source-map --load-path=node_modules"
+    "build:css": "sass app/assets/stylesheets:app/assets/builds --load-path=node_modules"
   }
 }

@@ -7,7 +7,8 @@ Rails.application.configure do
   #config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   config.hosts += [
-    '.lvh.me'
+    '.lvh.me',
+    'localhost'
   ]
 
   if Rails.root.join('tmp/caching-dev.txt').exist?
