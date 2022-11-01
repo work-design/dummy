@@ -1,8 +1,7 @@
 class ApplicationController < ActionController::Base
   if defined? RailsCom
     include Com::Controller::ErrHandler
-    include RailsCom::Application
-    include Com::Controller::Admin
+    include Com::Controller::Application
   end
   include Auth::Controller::Application if defined? RailsAuth
   include Roled::Controller::Application if defined? RailsRole
