@@ -15,7 +15,6 @@ gem 'image_processing'
 gem 'rqrcode'
 
 # Third Part
-gem 'omniauth-wechat-oauth2', github: 'qinmingyuan/omniauth-wechat-oauth2'
 gem 'upyun_rails', github: 'qinmingyuan/upyun_rails'
 
 # Rails Helpers

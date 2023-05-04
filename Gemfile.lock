@@ -6,13 +6,6 @@ GIT
       activerecord (>= 4.0, <= 7.1)
 
 GIT
-  remote: https://github.com/qinmingyuan/omniauth-wechat-oauth2.git
-  revision: 3391e65ce1e58a589ae2cdf6d280399c1ff68a9a
-  specs:
-    omniauth-wechat-oauth2 (0.1.0)
-      omniauth-oauth2 (~> 1.5)
-
-GIT
   remote: https://github.com/qinmingyuan/upyun_rails.git
   revision: 5e8af313d66eaef4a1ac4af2b363a02ba51bf0c8
   specs:
@@ -177,7 +170,6 @@ GEM
       railties (>= 6.0.0)
       thor (>= 0.14.1)
       webrick (>= 1.3)
-    hashie (5.0.0)
     http-2-next (0.5.1)
     http-accept (1.7.0)
     http-cookie (1.0.5)
@@ -193,7 +185,6 @@ GEM
     io-console (0.6.0)
     irb (1.6.4)
       reline (>= 0.3.0)
-    jwt (2.7.0)
     kaminari (1.2.2)
       activesupport (>= 4.1.0)
       kaminari-actionview (= 1.2.2)
@@ -226,7 +217,6 @@ GEM
     mini_portile2 (2.8.2)
     minitest (5.18.0)
     msgpack (1.7.0)
-    multi_xml (0.6.0)
     net-http (0.3.2)
       uri
     net-imap (0.3.4)
@@ -243,20 +233,6 @@ GEM
     nokogiri (1.14.3)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    oauth2 (2.0.9)
-      faraday (>= 0.17.3, < 3.0)
-      jwt (>= 1.0, < 3.0)
-      multi_xml (~> 0.5)
-      rack (>= 1.2, < 4)
-      snaky_hash (~> 2.0)
-      version_gem (~> 1.1)
-    omniauth (2.1.1)
-      hashie (>= 3.4.6)
-      rack (>= 2.2.3)
-      rack-protection
-    omniauth-oauth2 (1.8.0)
-      oauth2 (>= 1.4, < 3)
-      omniauth (~> 2.0)
     pg (1.5.3)
     propshaft (0.7.0)
       actionpack (>= 7.0.0)
@@ -269,8 +245,6 @@ GEM
     raabro (1.4.0)
     racc (1.6.2)
     rack (2.2.7)
-    rack-protection (3.0.6)
-      rack
     rack-test (2.1.0)
       rack (>= 1.3)
     rails (7.0.4.3)
@@ -325,9 +299,6 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
-    snaky_hash (2.0.1)
-      hashie
-      version_gem (~> 1.1, >= 1.1.1)
     thor (1.2.1)
     timeout (0.3.2)
     turbo-rails (1.4.0)
@@ -340,7 +311,6 @@ GEM
       unf_ext
     unf_ext (0.0.8.2)
     uri (0.12.1)
-    version_gem (1.1.2)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -374,7 +344,6 @@ DEPENDENCIES
   good_job
   image_processing
   localhost
-  omniauth-wechat-oauth2!
   pg
   propshaft
   puma
