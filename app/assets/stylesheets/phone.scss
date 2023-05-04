@@ -1,0 +1,21 @@
+@import 'variables/bulma';
+@import "rails_design/app/assets/stylesheets/rails_design/phone";
+@import 'sources/fontawesome';
+@import 'sources/font';
+@import 'variables/weui';
+
+.button.is-warning {
+  background-color: #ff933b;
+  color: #fff;
+}
+
+.cards.in-business {
+  .card:nth-child(odd) {
+    background-image: url(/background_1.jpg);
+    background-size: auto 100%;
+  }
+  .card:nth-child(even) {
+    background-image: url(/background_2.jpg);
+    background-size: auto 100%;
+  }
+}

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: '杨任东竹石体';
+  src: url(/zhushi-Semibold.ttf) format('truetype');
+}
+
+.is-family-zhushi {
+  font-family: '杨任东竹石体', serif;
+}
+
+.has-background-login {
+  background-image: url(/login_bg.jpg);
+  background-size: cover;
+}
+
+.slide + .weui-panel {
+  margin-top: 0;
+}
+
+.weui-mask-share {
+  background-image: url(/share.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}

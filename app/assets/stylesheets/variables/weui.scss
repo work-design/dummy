@@ -1,0 +1,7 @@
+@import 'bulma/sass/utilities/derived-variables';
+$primary: #1ECC99;
+
+body {
+  --weui-BRAND: #{$primary};
+  --weui-BTN-DEFAULT-COLOR: #{$primary};
+}
