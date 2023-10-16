@@ -30,7 +30,6 @@ gem 'turbo-rails'
 gem 'propshaft'
 
 gem 'bootsnap', require: false
-gem 'amazing_print'
 
 group :development, :test do
   gem 'debug'

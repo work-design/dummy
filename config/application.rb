@@ -8,11 +8,6 @@ module Dummy
 
     config.time_zone = 'Beijing'
     config.i18n.default_locale = :zh
-
-    config.hosts += [
-      '.one.work',
-      '.work.design'
-    ]
   end
 end
 
