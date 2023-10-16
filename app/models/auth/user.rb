@@ -2,6 +2,6 @@ module Auth
   class User < ActiveRecord::Base
     include Model::User if defined? RailsAuth
     include Notice::Model::User if defined? RailsNotice
-    include Org::Model::User if defined? RailsOrg
+    include Org::Ext::User if defined? RailsOrg
   end
 end

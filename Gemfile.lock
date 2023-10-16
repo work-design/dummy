@@ -39,7 +39,11 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_extend.git
+<<<<<<< HEAD
   revision: b4dfbf418f6ab0e33bd077ebd88d0ee59409ebe3
+=======
+  revision: 9c316ffe1174d0e3b1d122bc4e81042d61d009f6
+>>>>>>> ef02904c8efcb90cf9ca06021af1ce700f224b0d
   specs:
     rails_extend (1.0.1)
       rails (>= 5.0)
@@ -161,8 +165,12 @@ GEM
     erubi (1.12.0)
     et-orbi (1.2.7)
       tzinfo
+<<<<<<< HEAD
     faraday (2.7.11)
       base64
+=======
+    faraday (2.7.10)
+>>>>>>> ef02904c8efcb90cf9ca06021af1ce700f224b0d
       faraday-net_http (>= 2.0, < 3.1)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.2)
