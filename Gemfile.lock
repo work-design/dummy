@@ -209,6 +209,9 @@ GEM
       activerecord
       kaminari-core (= 1.2.2)
     kaminari-core (1.2.2)
+    listen (3.8.0)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
     localhost (1.1.10)
     loofah (2.21.4)
       crass (~> 1.0.2)
@@ -296,6 +299,9 @@ GEM
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
     rake (13.0.6)
+    rb-fsevent (0.11.2)
+    rb-inotify (0.10.1)
+      ffi (~> 1.0)
     rdoc (6.5.0)
       psych (>= 4.0.0)
     redis (5.0.7)
@@ -367,6 +373,7 @@ DEPENDENCIES
   default_where!
   good_job
   image_processing
+  listen
   localhost
   pg
   propshaft
