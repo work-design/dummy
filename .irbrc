@@ -1,2 +1,1 @@
-require 'amazing_print'
-AmazingPrint.irb!
+IRB.conf[:ECHO_ON_ASSIGNMENT] = true
