@@ -13,6 +13,8 @@ module Dummy
     config.middleware.delete ActionDispatch::RequestId # 记录X-Request-Id（方便查看请求在群集中的哪台执行）
 
     config.active_record.encryption.support_unencrypted_data = true
+
+    config.active_job.queue_adapter = :good_job
   end
 end
 
