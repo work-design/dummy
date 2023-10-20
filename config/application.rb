@@ -1,5 +1,7 @@
 require_relative 'boot'
 require 'rails/all'
+require 'good_job/engine'
+
 Bundler.require(*Rails.groups)
 
 module Dummy
