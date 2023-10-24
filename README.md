@@ -12,12 +12,16 @@
 
 ## 如何使用
 1. 安装依赖：
-  * 运行 `bundle`
-  * 运行 `yarn install`
-2. 个性化配置
-默认提供了基本的通用配置，存储于 config/credentials.yml.enc，具体配置可运行 `bin/rails credentials:show` 查看。 个性化配置在命令后加 `--environment [name]` 即可。config/credentials 默认提供了 development 环境和 test 环境的 key, 此举的意义是为了方便开发者之间相互分享 `config/credentials/[name].yml.enc` 文件。其中默认配置包含：
-  * db，[postgresql url 语法](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING)
-  * secret_key_base
+  * `bundle`
+  * `yarn install`
+2. 个性化配置：
+
+默认提供了基本的通用配置，存储于 config/credentials 目录下，config/credentials 默认提供了 development 环境和 test 环境的 key, 此举的意义是为了方便开发者之间相互分享 `config/credentials/[name].yml.enc` 文件。
+
+  * 修改 development 配置文件：`bin/rails credentials:edit --environment development`
+  * 设置选项：
+    * db，[postgresql url 语法](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING)
+    * secret_key_base
 
 ## 开始开发
 1. 启动: `bin/dev`，将启动静态资源（javascript/css/image）的开发编译，命令包含：
