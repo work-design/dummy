@@ -7,18 +7,13 @@
 本项目具备如下特性：
 * 最佳实践：集成了 Work Design 的几个基础项目，给你带来了完全没有副作用的开发体验，包括：
   * 自动生成 migration: `bin/rails rails_extend:migrations`，[详见]()
-* 最少改动：
-  * 不用 copy `.example` 文件
 
 ## 如何使用
 1. 安装依赖：
   * `bundle`
   * `yarn install`
 2. 个性化配置：
-
-默认提供了基本的通用配置，存储于 config/credentials 目录下，config/credentials 默认提供了 development 环境和 test 环境的 key, 此举的意义是为了方便开发者之间相互分享 `config/credentials/[name].yml.enc` 文件。
-
-  * 修改 development 配置文件：`bin/rails credentials:edit --environment development`
+  * 修改 development 配置文件：`bin/rails credentials:edit -e development`
   * 设置选项：
     * db，[postgresql url 语法](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING)
     * db_test
