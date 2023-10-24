@@ -21,6 +21,7 @@
   * 修改 development 配置文件：`bin/rails credentials:edit --environment development`
   * 设置选项：
     * db，[postgresql url 语法](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING)
+    * db_test
     * secret_key_base
 
 ## 开始开发
