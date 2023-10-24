@@ -18,6 +18,7 @@
     * db，[postgresql url 语法](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING)
     * db_test
     * secret_key_base
+3. 非加密个性化配置：`config.x`    
 
 ## 开始开发
 1. 启动: `bin/dev`，将启动静态资源（javascript/css/image）的开发编译，命令包含：
