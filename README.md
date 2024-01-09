@@ -6,7 +6,7 @@
 
 本项目具备如下特性：
 * 最佳实践：集成了 Work Design 的几个基础项目，给你带来了完全没有副作用的开发体验，包括：
-  * 自动生成 migration: `bin/rails rails_extend:migrations`，[详见]()
+  * 自动生成 migration: `bin/rails g rails_extend:migrations`，[详见]()
 
 ## 如何使用
 1. 安装依赖：
@@ -19,6 +19,9 @@
     * db_test
     * secret_key_base
 3. 非加密个性化配置：`config.x`    
+4. 新增 engine 后：
+  * `bin/rails g rails_extend:migrations`
+  * 重启 应用
 
 ## 开始开发
 1. 启动: `bin/dev`，将启动静态资源（javascript/css/image）的开发编译，命令包含：
