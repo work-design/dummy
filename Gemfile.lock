@@ -15,7 +15,7 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_com.git
-  revision: cbb470881e56c67cc7b5ae270f21d9ee8c2fe3ae
+  revision: e091734eb5322b06e3e38791d1457004a14b4d86
   specs:
     rails_com (1.3.0)
       acme-client
@@ -33,14 +33,14 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_design.git
-  revision: 1f2d15d5ebb369085a6db78e53964ff40e65bfe1
+  revision: 31d5c29b50bee39e91f9d028bb22b7f0038846e3
   specs:
     rails_design (0.0.1)
       rails
 
 GIT
   remote: https://github.com/work-design/rails_extend.git
-  revision: f5a662c7a4794e0dc74017e1e7b95f35dc3c8690
+  revision: 063f67134799ad388a89ef254f6bb212ec420a68
   specs:
     rails_extend (1.0.1)
       rails (>= 5.0)
@@ -48,7 +48,7 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    acme-client (2.0.15)
+    acme-client (2.0.17)
       faraday (>= 1.0, < 3.0.0)
       faraday-retry (>= 1.0, < 3.0.0)
     actioncable (7.1.2)
@@ -162,11 +162,10 @@ GEM
     erubi (1.12.0)
     et-orbi (1.2.7)
       tzinfo
-    faraday (2.8.1)
-      base64
-      faraday-net_http (>= 2.0, < 3.1)
-      ruby2_keywords (>= 0.0.4)
-    faraday-net_http (3.0.2)
+    faraday (2.9.0)
+      faraday-net_http (>= 2.0, < 3.2)
+    faraday-net_http (3.1.0)
+      net-http
     faraday-retry (2.2.0)
       faraday (~> 2.0)
     ffi (1.16.3)
@@ -182,13 +181,13 @@ GEM
       fugit (>= 1.1)
       railties (>= 6.0.0)
       thor (>= 0.14.1)
-    http-2-next (1.0.2)
+    http-2-next (1.0.3)
     http-accept (1.7.0)
     http-cookie (1.0.5)
       domain_name (~> 0.5)
     http-form_data (2.3.0)
-    httpx (1.2.0)
-      http-2-next (>= 1.0.1)
+    httpx (1.2.3)
+      http-2-next (>= 1.0.3)
     i18n (1.14.1)
       concurrent-ruby (~> 1.0)
     image_processing (1.12.2)
@@ -230,9 +229,9 @@ GEM
     mini_magick (4.12.0)
     mini_mime (1.1.5)
     minitest (5.20.0)
-    monetize (1.12.0)
+    monetize (1.13.0)
       money (~> 6.12)
-    money (6.16.0)
+    money (6.19.0)
       i18n (>= 0.6.4, <= 2)
     money-rails (1.15.0)
       activesupport (>= 3.0)
@@ -361,8 +360,9 @@ GEM
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    with_advisory_lock (5.0.0)
+    with_advisory_lock (5.1.0)
       activerecord (>= 6.1)
+      zeitwerk (>= 2.6)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.6.12)
@@ -396,7 +396,7 @@ DEPENDENCIES
   webdrivers
 
 CHECKSUMS
-  acme-client (2.0.15) sha256=71b94e89ca7b0251f580cdf60809b4d71f4924d626d995da4f4b18f37361f3c9
+  acme-client (2.0.17) sha256=ee54f5b7a896bcc9fe3d2a360e0fcf62c5f99b1f47e0134170cde07413828265
   actioncable (7.1.2) sha256=9e7c1bcf5bf57e5bdce846f6281b0ca2aec1ebd0ce1b99b0454194b6e52c7416
   actionmailbox (7.1.2) sha256=b7785621fcda24c518c343f037d17da37065c818ad9d92d2a42c206537a57d51
   actionmailer (7.1.2) sha256=e3ecff2e4fe22ee5133ca4ab1c5284052a91429697f5bae7752992c89a6a6e1e
@@ -429,18 +429,18 @@ CHECKSUMS
   drb (2.2.0) sha256=e9e4af1cded3306cfe37e064a0086e302d5f40df9cb4d161d059a6bb3a75d40f
   erubi (1.12.0) sha256=27bedb74dfb1e04ff60674975e182d8ca787f2224f2e8143268c7696f42e4723
   et-orbi (1.2.7) sha256=3b693d47f94a4060ccc07e60adda488759b1e8b9228a633ebbad842dfc245fb4
-  faraday (2.8.1) sha256=a823dc6e1f5deaf6f91c8c1c02f37393f2339b39d811d9de33cef59d7d2ee4a6
-  faraday-net_http (3.0.2) sha256=6882929abed8094e1ee30344a3369e856fe34530044630d1f652bf70ebd87e8d
+  faraday (2.9.0) sha256=1aa114507006eed6779a726b932d5cc12f5f6053984a19a3403539306b0e0be3
+  faraday-net_http (3.1.0) sha256=1627be414960d0131691190ff524506ba6607402a50fb6eccda9e64ca60f859f
   faraday-retry (2.2.0) sha256=80824a5454dd0ce7d8074013454d163569b909001a64bdb3499c9968df4f41c5
   ffi (1.16.3) sha256=6d3242ff10c87271b0675c58d68d3f10148fabc2ad6da52a18123f06078871fb
   fugit (1.9.0) sha256=e92ae18828a094afdd753e42ded0b83ad3449d79adddc5d1ab88e28dbfedd221
   globalid (1.2.1) sha256=70bf76711871f843dbba72beb8613229a49429d1866828476f9c9d6ccc327ce9
   good_job (3.22.0) sha256=496afbd8100e3e47a19d0fae7f2887c0c6027ba75bef303f7952d2e13b6229b9
-  http-2-next (1.0.2) sha256=e90930af93b02133502e5446361c218b0a06bc786ceb6efe096add89ac1cd363
+  http-2-next (1.0.3) sha256=7df55ef84e9a66f71b260c497414983a3ba787e0d92cc38391a70fe63f5d5fc5
   http-accept (1.7.0) sha256=c626860682bfbb3b46462f8c39cd470fd7b0584f61b3cc9df5b2e9eb9972a126
   http-cookie (1.0.5) sha256=73756d46c7dbdc7023deecdb8a171348ea95a1b99810b31cfe8b4fb4e9a6318f
   http-form_data (2.3.0) sha256=cc4eeb1361d9876821e31d7b1cf0b68f1cf874b201d27903480479d86448a5f3
-  httpx (1.2.0) sha256=150cb4d75bf1e32359f69d350184be8b551fd6214be6c249dcc2688c15b4fc11
+  httpx (1.2.3) sha256=bff92313af0e0c47fd6e8aba89fa57d1825ed1d12d7a03833b225955d48f19cb
   i18n (1.14.1) sha256=9d03698903547c060928e70a9bc8b6b87fda674453cda918fc7ab80235ae4a61
   image_processing (1.12.2) sha256=d3b9e9c5a1cc2607a5214cc28b90d317a03bdd06239584c97535dd73e46f62b8
   io-console (0.7.1) sha256=a5ffa9fa6be28c4cc7337f7924d2e094ac6c34776f480e3b418a427f155bbcba
@@ -460,8 +460,8 @@ CHECKSUMS
   mini_magick (4.12.0) sha256=67302fa84e63f1002b71416a8466968ed0f33d22f5d42962a0c09a9f1c3a906a
   mini_mime (1.1.5) sha256=8681b7e2e4215f2a159f9400b5816d85e9d8c6c6b491e96a12797e798f8bccef
   minitest (5.20.0) sha256=a3faf26a757ced073aaae0bd10481340f53e221a4f50d8a6033591555374752e
-  monetize (1.12.0) sha256=3f47d6a4fb66349a2628094b14c1941e72037c110ff1b25aa3710e0b6252f79a
-  money (6.16.0) sha256=cf476f5f19188e247ec20f6509cff64dc35d395ee018bad799b1a9ea8bd4754a
+  monetize (1.13.0) sha256=0c1f8ae28aa21bbf1a6d014138d9bb0a5ce756c1a99b8b7f7d409c258b01d3b3
+  money (6.19.0) sha256=ec936fa1e42f2783719241ed9fd52725d0efa628f928feea1eb5c37d5de7daf3
   money-rails (1.15.0) sha256=cace7c3af76a0685747f57b96fdb321a4d966294e0a11b51f8e28c3ac08e4903
   msgpack (1.7.2) sha256=59ab62fd8a4d0dfbde45009f87eb6f158ab2628a7c48886b0256f175166baaa8
   mutex_m (0.2.0) sha256=b6ef0c6c842ede846f2ec0ade9e266b1a9dac0bc151682b04835e8ebd54840d5
@@ -520,7 +520,7 @@ CHECKSUMS
   websocket (1.2.10) sha256=2cc1a4a79b6e63637b326b4273e46adcddf7871caa5dc5711f2ca4061a629fa8
   websocket-driver (0.7.6) sha256=f69400be7bc197879726ad8e6f5869a61823147372fd8928836a53c2c741d0db
   websocket-extensions (0.1.5) sha256=1c6ba63092cda343eb53fc657110c71c754c56484aad42578495227d717a8241
-  with_advisory_lock (5.0.0) sha256=b8fa33a560800ae7325a80b38adee932de33420d83e2187f5d7b4c8f57bba332
+  with_advisory_lock (5.1.0) sha256=0692cd82013b271c59aa5e1f603b741ab94926dbce098990fbace5dd5412fed7
   xpath (3.2.0) sha256=6dfda79d91bb3b949b947ecc5919f042ef2f399b904013eb3ef6d20dd3a4082e
   zeitwerk (2.6.12) sha256=561e12975d0332fd3b62cc859aff3bab432e5f320689c8a10cd4674b5c0439be
 
