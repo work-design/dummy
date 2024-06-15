@@ -1,8 +1,8 @@
-@import 'variables/bulma';
-@import "rails_design/app/assets/stylesheets/rails_design/phone";
-@import 'sources/fontawesome';
-@import 'sources/font';
-@import 'variables/weui';
+@use 'rails_design/app/stylesheets/rails_design/phone';
+@use 'sources/fontawesome';
+@use 'sources/font';
+@use 'variables/bulma';
+@use 'variables/weui';
 
 .button.is-warning {
   background-color: #ff933b;
