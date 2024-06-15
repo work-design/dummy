@@ -1,9 +1,11 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'rails'
+gem 'rails', '7.2.0.beta2'
 gem 'puma'
-gem 'good_job'
+gem 'solid_queue'
+gem 'solid_cache'
+gem 'kamal', require: false
 
 # Store
 gem 'pg'
@@ -23,7 +25,6 @@ gem 'default_where', github: 'qinmingyuan/default_where'
 # Engines
 gem 'rails_com', github: 'work-design/rails_com'
 gem 'rails_design', github: 'work-design/rails_design'
-gem 'rails_extend', github: 'work-design/rails_extend'
 
 # Assets
 gem 'turbo-rails'
