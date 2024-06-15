@@ -6,12 +6,13 @@
 
 本项目具备如下特性：
 * 最佳实践：集成了 Work Design 的几个基础项目，给你带来了完全没有副作用的开发体验，包括：
-  * 自动生成 migration: `bin/rails g rails_extend:migrations`，[详见]()
+  * 自动生成 migration: `bin/rails g rails_com:migrations`，[详见]()
 
 ## 如何使用
 1. 安装依赖：
   * `bundle`
-  * `yarn install`
+  * `npm install`
+  * `npm link rails_design`
 2. 个性化配置：
   * 修改 development 配置文件：`bin/rails credentials:edit -e development`
   * 设置选项：
@@ -20,7 +21,7 @@
     * secret_key_base
 3. 非加密个性化配置：`config.x`    
 4. 新增 engine 后：
-  * `bin/rails g rails_extend:migrations`
+  * `bin/rails g rails_com:migrations`
   * 重启 应用
 
 ## 开始开发
