@@ -1,0 +1,80 @@
+service: dummy
+image: work-design/dummy
+servers:
+  web:
+    hosts:
+      - 192.168.0.2
+    labels:
+      traefik.http.routers.dummy-webx.entrypoints: websecure
+      traefik.http.routers.dummy-webx.rule: Host(`test.work.design`)
+      traefik.http.routers.dummy-webx.tls.certresolver: letsencrypt
+      traefik.http.routers.dummy-webx.tls.domains[0].main: test.work.design
+  job:
+    hosts:
+      - 192.168.0.2
+    cmd: bundle exec rake solid_queue:start
+
+registry:
+  server: ccr.ccs.tencentyun.com
+  username: KAMAL_REGISTRY_USERNAME
+  password:
+    - KAMAL_REGISTRY_PASSWORD
+
+ssh:
+  user: root
+
+volumes:
+  - ~/app/acme:/rails/acme
+
+env:
+  clear:
+    RAILS_ENV: production
+
+builder:
+  dockerfile: docker/Dockerfile
+  remote:
+    arch: amd64
+    host: ssh://root@192.168.0.2
+
+accessories:
+  postgres:
+    image: postgres:16-alpine
+    volumes:
+      - ~/postgres_data:/var/lib/postgresql/data
+    env:
+      POSTGRES_PASSWORD: postgres
+    port: 5432
+  redis:
+    image: redis:latest
+    port: 6379
+    volumes:
+      - ~/redis_data:/data
+
+traefik:
+  image: traefik:3.0
+  options:
+    publish:
+      - 443:443
+      - 8080:8080
+    volume:
+      - /root/acme.json:/acme.json
+  labels:
+    traefik.enable: true
+    traefik.http.routers.dashboard.service: api@internal
+    traefik.http.routers.dashboard.middlewares: auth
+    traefik.http.middlewares.auth.basicauth.users: test:$2y$05$H2o72tMaO.TwY1wNQUV1K.fhjRgLHRDWohFvUZOJHBEtUXNKrqUKi # test:password
+  args:
+    accesslog: true
+    accesslog.filePath: /opt/access.log
+    api.insecure: true
+    api.debug: true
+    entrypoints.web.address: ':80'
+    entrypoints.websecure.address: ':443'
+    certificatesResolvers.letsencrypt.acme.email: it@one.work
+    certificatesResolvers.letsencrypt.acme.storage: acme.json
+    certificatesResolvers.letsencrypt.acme.httpchallenge: true
+    certificatesResolvers.letsencrypt.acme.httpchallenge.entrypoint: web
+
+healthcheck:
+  interval: 20s
+  max_attempts: 20
