@@ -34,6 +34,18 @@
 ## 部署
 * 编译静态资源：`rake assets:precompile`
 
+### 基于 kamal 第一次
+  * 购买云主机；
+    * 把 root 账号 ssh 登录授权；
+    * 安全策略，开放 80/443 端口；
+  * `kamal env push`
+  * `kamal setup`
+  * traefik
+    * acme.json 的文件权限 600
+  
+后续部署
+  * `kamal deploy`
+
 ## 注意
 * 如果是在本项目下运行 Rails，请使用 `bin/rails`, 这样会正确设置 ENV['BUNDLE_GEMFILE'] 的值；
 * 检查 public 文件夹下是否存在 manifest.json 文件，如果该文件存在，则在本地使用的是编译后的静态资源；
