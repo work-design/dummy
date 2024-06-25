@@ -1,0 +1,4 @@
+#!/bin/sh
+
+rm public/assets/.manifest.json
+exit 0
