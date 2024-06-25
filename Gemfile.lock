@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/qinmingyuan/default_where.git
-  revision: 120c8f54527b420956166b863fccdeb8d021b267
+  revision: 53d1d25b68512c54d6aeb7fc32f16f4794bd7405
   specs:
     default_where (2.3.0)
       activerecord (>= 4.0, <= 7.2)
@@ -35,7 +35,7 @@ GIT
 
 GIT
   remote: https://github.com/work-design/rails_design.git
-  revision: a10a94d75c20af3adc977f25feffb75f12280d6b
+  revision: 8bbfb8000b400f5de3eef01d8261b7459104753c
   specs:
     rails_design (0.0.1)
       rails

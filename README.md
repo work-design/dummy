@@ -38,6 +38,7 @@
   * 购买云主机；
     * 把 root 账号 ssh 登录授权；
     * 安全策略，开放 80/443 端口；
+    * [非 root 用户](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user)
   * `kamal env push`
   * `kamal setup`
   * traefik
