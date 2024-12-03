@@ -330,6 +330,11 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
       websocket (~> 1.0)
+    solid_cable (3.0.2)
+      actioncable (>= 7.2)
+      activejob (>= 7.2)
+      activerecord (>= 7.2)
+      railties (>= 7.2)
     solid_cache (1.0.6)
       activejob (>= 7.2)
       activerecord (>= 7.2)
@@ -399,6 +404,7 @@ DEPENDENCIES
   rails_design!
   rqrcode
   selenium-webdriver
+  solid_cable
   solid_cache
   solid_queue
   sqlite3
@@ -518,6 +524,7 @@ CHECKSUMS
   rubyzip (2.3.2) sha256=3f57e3935dc2255c414484fbf8d673b4909d8a6a57007ed754dde39342d2373f
   securerandom (0.3.2) sha256=e8b2ffa651dfbbb26eb4bfb8ddcfff94221a93e3f118f39e0f7f94c14fea9dc0
   selenium-webdriver (4.10.0) sha256=a322af38f9a8966a6c3ab85c365b08c5556cdef72f577905b2b42469faee9d43
+  solid_cable (3.0.2) sha256=4181cd6c9336aee82f6760ce8e31ac55ec73db65da1a93b99e35eadfdbeedce3
   solid_cache (1.0.6) sha256=fe1acf73fbe4a6a53620425317949082d3b99e0cfd35416106b56220fa66c311
   solid_queue (1.0.1) sha256=2abcba282fe143aa8fc7fc8125c5af1c59723298c0f04d7015883b4f69853259
   sqlite3 (2.3.1-arm64-darwin) sha256=882a006725ce6905570c652c8b2f2d1d295b9f21ac009f176c91777d7c602a40

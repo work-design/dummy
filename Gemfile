@@ -5,6 +5,7 @@ gem 'rails', '8.0.0'
 gem 'puma'
 gem 'solid_queue'
 gem 'solid_cache'
+gem 'solid_cable'
 gem 'kamal', require: false
 
 # Store
