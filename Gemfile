@@ -8,8 +8,7 @@ gem 'solid_cache'
 gem 'kamal', require: false
 
 # Store
-gem 'pg'
-gem 'redis'
+gem 'sqlite3'
 
 # Utils
 gem 'bcrypt'
@@ -23,8 +22,8 @@ gem 'upyun_rails', github: 'qinmingyuan/upyun_rails'
 gem 'default_where', github: 'qinmingyuan/default_where'
 
 # Engines
-gem 'rails_com', github: 'work-design/rails_com'
-gem 'rails_design', github: 'work-design/rails_design'
+gem 'rails_com', path: 'engine/rails_com'
+gem 'rails_design', path: 'engine/rails_design'
 
 # Assets
 gem 'turbo-rails'

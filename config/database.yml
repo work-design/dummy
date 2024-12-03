@@ -1,12 +1,26 @@
 default: &default
-  adapter: <%= ENV['DATABASE_ADAPTER'] || 'postgresql' %>
+  adapter: sqlite3
   pool: 5
   timeout: 5000
-  url: <%= ENV['DATABASE_URL'] || Rails.application.credentials.db %>
 development:
   <<: *default
+  database: storage/development.sqlite3
 test:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] || Rails.application.credentials.db_test %>
+  database: storage/test.sqlite3
 production:
-  <<: *default
+  primary:
+    <<: *default
+    database: storage/production.sqlite3
+  cache:
+    <<: *default
+    database: storage/production_cache.sqlite3
+    migrations_paths: db/cache_migrate
+  queue:
+    <<: *default
+    database: storage/production_queue.sqlite3
+    migrations_paths: db/queue_migrate
+  cable:
+    <<: *default
+    database: storage/production_cable.sqlite3
+    migrations_paths: db/cable_migrate
