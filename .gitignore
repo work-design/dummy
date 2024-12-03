@@ -6,6 +6,7 @@ log/*
 tmp/*
 !/tmp/.keep
 
+db/migrate
 db/schema.rb
 
 config/credentials
