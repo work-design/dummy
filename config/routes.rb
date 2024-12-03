@@ -4,9 +4,7 @@ Rails.application.routes.draw do
   namespace :board, defaults: { namespace: 'board' } do
     root 'home#index'
   end
-  namespace :panel, defaults: { namespace: 'panel' } do
-    root 'home#index'
-  end
+
   namespace :my, defaults: { namespace: 'my' } do
     root 'home#index'
   end

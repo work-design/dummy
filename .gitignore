@@ -18,10 +18,10 @@ public/challenge
 app/assets/builds/*
 !app/assets/builds/.keep
 
+storage
+!storage/.keep
+
 node_modules
-yarn-error.log
-yarn-debug.log*
-.yarn-integrity
 
 .lock-*
 .irb_history
