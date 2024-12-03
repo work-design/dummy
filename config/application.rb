@@ -16,6 +16,7 @@ module Dummy
     config.active_record.encryption.support_unencrypted_data = true
 
     config.active_job.queue_adapter = :solid_queue
+    config.solid_queue.connects_to = { database: { writing: :queue } }
   end
 end
 
