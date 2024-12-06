@@ -1,4 +1,0 @@
-#!/bin/sh
-
-ssh ubuntu@example.com sudo docker network create kamal
-exit 0

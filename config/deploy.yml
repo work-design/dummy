@@ -1,80 +1,40 @@
 service: dummy
 image: work-design/dummy
+deploy_timeout: 100
 servers:
   web:
     hosts:
-      - 192.168.0.2
-    labels:
-      traefik.http.routers.dummy-webx.entrypoints: websecure
-      traefik.http.routers.dummy-webx.rule: Host(`test.work.design`)
-      traefik.http.routers.dummy-webx.tls.certresolver: letsencrypt
-      traefik.http.routers.dummy-webx.tls.domains[0].main: test.work.design
+      - 192.168.1.1
   job:
     hosts:
-      - 192.168.0.2
-    cmd: bundle exec rake solid_queue:start
+      - 192.168.1.1
+    cmd: bin/jobs
 
 registry:
   server: ccr.ccs.tencentyun.com
-  username: KAMAL_REGISTRY_USERNAME
+  username:
+    - KAMAL_REGISTRY_USERNAME
   password:
     - KAMAL_REGISTRY_PASSWORD
 
-ssh:
-  user: root
-
 volumes:
   - ~/app/acme:/rails/acme
+  - ~/app/tmp/storage:/rails/tmp/storage
+  - ~/app/storage:/rails/storage
 
 env:
   clear:
     RAILS_ENV: production
+    RAILS_MAX_THREADS: 20
 
 builder:
-  dockerfile: docker/Dockerfile
-  remote:
-    arch: amd64
-    host: ssh://root@192.168.0.2
+  dockerfile: deploy/Dockerfile
+  arch: x86_64
 
-accessories:
-  postgres:
-    image: postgres:16-alpine
-    volumes:
-      - ~/postgres_data:/var/lib/postgresql/data
-    env:
-      POSTGRES_PASSWORD: postgres
-    port: 5432
-  redis:
-    image: redis:latest
-    port: 6379
-    volumes:
-      - ~/redis_data:/data
-
-traefik:
-  image: traefik:3.0
-  options:
-    publish:
-      - 443:443
-      - 8080:8080
-    volume:
-      - /root/acme.json:/acme.json
-  labels:
-    traefik.enable: true
-    traefik.http.routers.dashboard.service: api@internal
-    traefik.http.routers.dashboard.middlewares: auth
-    traefik.http.middlewares.auth.basicauth.users: test:$2y$05$H2o72tMaO.TwY1wNQUV1K.fhjRgLHRDWohFvUZOJHBEtUXNKrqUKi # test:password
-  args:
-    accesslog: true
-    accesslog.filePath: /opt/access.log
-    api.insecure: true
-    api.debug: true
-    entrypoints.web.address: ':80'
-    entrypoints.websecure.address: ':443'
-    certificatesResolvers.letsencrypt.acme.email: it@one.work
-    certificatesResolvers.letsencrypt.acme.storage: acme.json
-    certificatesResolvers.letsencrypt.acme.httpchallenge: true
-    certificatesResolvers.letsencrypt.acme.httpchallenge.entrypoint: web
-
-healthcheck:
-  interval: 20s
-  max_attempts: 20
+proxy:
+  app_port: 3000
+  response_timeout: 100
+  forward_headers: true
+  healthcheck:
+    interval: 30
+    timeout: 60
