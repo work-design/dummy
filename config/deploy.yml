@@ -30,6 +30,7 @@ env:
 builder:
   dockerfile: deploy/Dockerfile
   arch: x86_64
+  remote: ssh://ubuntu@49.235.150.128
 
 proxy:
   app_port: 3000
