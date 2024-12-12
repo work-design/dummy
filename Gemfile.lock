@@ -5,14 +5,6 @@ GIT
     default_where (2.3.0)
       activerecord
 
-GIT
-  remote: https://github.com/qinmingyuan/upyun_rails.git
-  revision: 7be4e3a1ad8dc387bb8662bc9f10c12e04006e93
-  specs:
-    upyun_rails (0.1.1)
-      activestorage
-      httpx
-
 PATH
   remote: engine/rails_com
   specs:
@@ -412,7 +404,6 @@ DEPENDENCIES
   solid_queue
   sqlite3
   turbo-rails
-  upyun_rails!
   web-console
   webdrivers
 
@@ -538,7 +529,6 @@ CHECKSUMS
   timeout (0.4.2) sha256=8aca2d5ff98eb2f7a501c03f8c3622065932cc58bc58f725cd50a09e63b4cc19
   turbo-rails (2.0.11) sha256=fc47674736372780abd2a4dc0d84bef242f5ca156a457cd7fa6308291e397fcf
   tzinfo (2.0.6) sha256=8daf828cc77bcf7d63b0e3bdb6caa47e2272dcfaf4fbfe46f8c3a9df087a829b
-  upyun_rails (0.1.1)
   uri (1.0.2) sha256=b303504ceb7e5905771fa7fa14b649652fa949df18b5880d69cfb12494791e27
   useragent (0.16.11) sha256=700e6413ad4bb954bb63547fa098dddf7b0ebe75b40cc6f93b8d54255b173844
   web-console (4.2.1) sha256=e7bcf37a10ea2b4ec4281649d1cee461b32232d0a447e82c786e6841fd22fe20

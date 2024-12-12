@@ -16,13 +16,9 @@ gem 'bcrypt'
 gem 'image_processing'
 gem 'rqrcode'
 
-# Third Part
-gem 'upyun_rails', github: 'qinmingyuan/upyun_rails'
-
-# Rails Helpers
-gem 'default_where', github: 'qinmingyuan/default_where'
 
 # Engines
+gem 'default_where', path: 'engine/default_where'
 gem 'rails_com', path: 'engine/rails_com'
 gem 'rails_design', path: 'engine/rails_design'
 
