@@ -11,9 +11,6 @@ tmp/*
 db/migrate
 db/schema.rb
 
-config/credentials
-!config/credentials/production.yml.enc
-
 public/assets
 public/fonts
 public/challenge

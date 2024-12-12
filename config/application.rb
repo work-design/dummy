@@ -20,5 +20,5 @@ module Dummy
   end
 end
 
-ENV['EDITOR'] = 'code --wait'
+ENV['EDITOR'] = 'vi'
 SETTING = Rails.application.credentials
