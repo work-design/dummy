@@ -7,6 +7,7 @@ gem 'solid_queue'
 gem 'solid_cache'
 gem 'solid_cable'
 gem 'kamal', require: false
+gem 'rails_deploy', '0.7.1', require: false
 
 # Store
 gem 'sqlite3'
@@ -15,6 +16,7 @@ gem 'sqlite3'
 gem 'bcrypt'
 gem 'image_processing'
 gem 'rqrcode'
+gem 'csv'
 
 
 # Engines
