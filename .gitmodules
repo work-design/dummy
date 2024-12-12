@@ -7,3 +7,6 @@
 [submodule "engine/default_where"]
   path = engine/default_where
   url = git@github.com:qinmingyuan/default_where.git
+[submodule "engine/rails_auth"]
+	path = engine/rails_auth
+	url = git@github.com:work-design/rails_auth.git

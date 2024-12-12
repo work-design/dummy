@@ -20,6 +20,7 @@ gem 'rqrcode'
 # Engines
 gem 'default_where', path: 'engine/default_where'
 gem 'rails_com', path: 'engine/rails_com'
+gem 'rails_auth', path: 'engine/rails_auth'
 gem 'rails_design', path: 'engine/rails_design'
 
 # Assets
