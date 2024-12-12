@@ -1,12 +1,12 @@
 [submodule "engine/rails_com"]
   path = engine/rails_com
-  url = git@github.com:work-design/rails_com.git
+  url = ./engine/rails_com
 [submodule "engine/rails_design"]
   path = engine/rails_design
-  url = git@github.com:work-design/rails_design.git
+  url = ./engine/rails_design
 [submodule "engine/default_where"]
   path = engine/default_where
-  url = git@github.com:qinmingyuan/default_where.git
+  url = ./engine/default_where
 [submodule "engine/rails_auth"]
 	path = engine/rails_auth
-	url = git@github.com:work-design/rails_auth.git
+	url = ./engine/rails_auth
