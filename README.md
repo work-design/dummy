@@ -47,6 +47,14 @@
 后续部署
   * `kamal deploy`
 
+## 直接使用 docker 启动
+
+```
+docker run --detach --restart unless-stopped --env RAILS_ENV="production" --env RAILS_MAX_THREADS="20"  --log-opt max-size="10m" --volume ~/app/acme:/rails/acme --volume ~/app/storage:/rails/tmp/storage ccr.ccs.tencentyun.com/work-design/dummy:latest
+```
+
+
+
 ## 注意
 * 如果是在本项目下运行 Rails，请使用 `bin/rails`, 这样会正确设置 ENV['BUNDLE_GEMFILE'] 的值；
 * 检查 public 文件夹下是否存在 manifest.json 文件，如果该文件存在，则在本地使用的是编译后的静态资源；
