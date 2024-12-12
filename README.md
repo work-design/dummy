@@ -50,7 +50,7 @@
 ## 直接使用 docker 启动
 
 ```
-docker run --detach --restart unless-stopped --env RAILS_ENV="production" --env RAILS_MAX_THREADS="20"  --log-opt max-size="10m" --volume ~/app/acme:/rails/acme --volume ~/app/storage:/rails/tmp/storage ccr.ccs.tencentyun.com/work-design/dummy:latest
+docker run --detach --restart unless-stopped --env RAILS_ENV="production" --env RAILS_MAX_THREADS="20"  --log-opt max-size="10m" --volume ~/app/acme:/rails/acme --volume ~/app/storage:/rails/tmp/storage 
 ```
 
 
