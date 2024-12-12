@@ -1,5 +1,7 @@
 .bundle
 
+.kamal/secrets-common
+
 log/*
 !log/.keep
 
