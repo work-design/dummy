@@ -14,6 +14,5 @@ class ActiveStorage::BaseController < ActionController::Base
       host: request.host,
       port: request.port
     }
-    ActiveStorage::Current.url_options.merge! host: SETTING.host if defined? SETTING
   end
 end

@@ -8,4 +8,11 @@ class ApplicationController < ActionController::Base
   include Org::Controller::Application if defined? RailsOrg
 
   protect_from_forgery with: :exception, unless: -> { json_format? }
+
+  before_action do
+    ActiveStorage::Current.url_options = {
+      port: request.port,
+      host: request.host
+    }
+  end
 end
