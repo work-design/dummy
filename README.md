@@ -26,15 +26,16 @@
 
 ## 开始开发
 1. 启动: `bin/dev`，将启动静态资源（javascript/css/image）的开发编译，命令包含：
-   * `yarn build --watch`： 编译 js
-   * `yarn build:css --watch`: 编译 css
-   * `bin/rails`: 启动 rails server
-2. 浏览器里访问: `localhost:3000`
+  * `npm build --watch`： 编译 js；
+  * `npm build:css --watch`: 编译 css；
+  * `bin/rails s`: 启动 rails server；
+  * `bin/jobs`: 启动队列任务；
+2. 浏览器里访问: `lvh.me:3000`
 
 ## 部署
 * 编译静态资源：`rake assets:precompile`
 
-### 基于 kamal 第一次
+### 基于 kamal 第一次部署
   * 购买云主机；
     * 把 root 账号 ssh 登录授权；
     * 安全策略，开放 80/443 端口；
@@ -44,8 +45,15 @@
   * traefik
     * acme.json 的文件权限 600
   
-后续部署
-  * `kamal deploy`
+### 基于 kamal 后续部署
+  * 进入项目目录；
+  * 拉取最新代码（如需要）：
+    * `git pull`
+    * `git submodule update --rebase` 更新子模块
+  * 更新依赖（如需要）
+    * `bundle install` 安装 gems
+    * `npm install` 安装 js 依赖
+  * 运行部署：`bin/kamal deploy`
 
 ## 直接使用 docker 启动
 
