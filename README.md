@@ -33,7 +33,6 @@
 2. 浏览器里访问: `lvh.me:3000`
 
 ## 部署
-* 编译静态资源：`rake assets:precompile`
 
 ### 基于 kamal 第一次部署
   * 购买云主机；
