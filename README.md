@@ -57,6 +57,9 @@
 docker run --detach --restart unless-stopped --env RAILS_ENV="production" --env RAILS_MAX_THREADS="20"  --log-opt max-size="10m" --volume ~/app/acme:/rails/acme --volume ~/app/storage:/rails/storage --publish 3000:3000
 ```
 
+## Docker 数据持久化目录位于 app 目录下，如有需要可对该目录进行定期备份，包含：
+  * storage: 默认为数据所在目录, 取决于 database.yml 配置；
+  * tmp/storage: 上传文件所在目录, 取决于 storage.yml 配置;
 
 
 ## 注意
