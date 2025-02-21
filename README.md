@@ -12,7 +12,6 @@
 1. 安装依赖：
   * `bundle`
   * `npm install`
-  * `npm link rails_design`
 2. 个性化配置：
   * 修改 development 配置文件：`bin/rails credentials:edit -e development`
   * 设置选项：
