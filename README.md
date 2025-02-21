@@ -9,14 +9,17 @@
   * 自动生成 migration: `bin/rails g rails_com:migrations`，[详见]()
 
 ## 如何使用
-1. 安装依赖：
+1. Git clone 当前项目
+  * `git clone git@github.com:work-design/dummy.git`
+  * `git submodule update --init` 
+  * `git submodule foreach git checkout main`
+2. 安装依赖：
   * `bundle`
   * `npm install`
-2. 个性化配置：
+3. 个性化配置：
   * 修改 development 配置文件：`bin/rails credentials:edit -e development`
   * 设置选项：
-    * db，[postgresql url 语法](https://www.postgresql.org/docs/current/libpq-connect.html#LIBPQ-CONNSTRING)
-    * db_test
+    * database_user
     * secret_key_base
 3. 非加密个性化配置：`config.x`    
 4. 新增 engine 后：
